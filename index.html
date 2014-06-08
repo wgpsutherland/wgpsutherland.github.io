@@ -1,35 +1,25 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
-	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<meta charset="utf-8"/>
+	<title>Will Sutherland's GitHub</title>
+	<link rel="stylesheet" href="../css/styling.css"/>
+
+	<meta name="author" content="Will Sutherland"/>
+	<meta name="description" content="Will Sutherland's GitHub/>
 </head>
 
 <body>
 
-<h1> Hello World, I'm Will Sutherland</h1>
+<div id="wrapper">
+<div id="main">
 
-<p> This is all on github pages! It works!!!!! </p>
+	<h1>Will Sutherland</h1>
 
-<div id="instafeed"></div>
-
-<script>
-	$(function() {
-			$.ajax({
-		    	type: "GET",
-		        dataType: "jsonp",
-		        cache: false,
-		        url: "https://api.instagram.com/v1/users/43153969/media/recent/?access_token=222716143.cde9b68.04e77477b2fd4524a0d2a91fb170142f",
-		        success: function(data) {
-			        for (var i = 0; i < 10; i++) {
-						$("#instafeed").append("<div class='instaframe'><a target='_blank' href='"+ data.data[i].link +"'><img src='" + data.data[i].images.standard_resolution.url +"'/></a></div>");   
-			      	}
-		        }
-		    });
-	});
-</script>
+</div>
+</div>
 
 </body>
-
 </html>
