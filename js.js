@@ -1,3 +1,4 @@
+							<script>
 							$(function() {
 									$.ajax({
 								    	type: "GET",
@@ -14,5 +15,5 @@
 								        }
 								    });
 							});
-								    
+							</script>		    
 					
