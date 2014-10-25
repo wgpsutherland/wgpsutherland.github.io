@@ -1,3 +1,32 @@
+/* ======================================== MEDIA TEMPLATE ================================= */
+
+/* Everything and Desktops */
+
+/* Lanscape iPad */
+@media (max-width: 1024px) {
+
+}
+
+/* Portrait iPad */
+@media (max-width: 768px) {
+
+}
+
+/* Landscape smartphone */
+@media (max-width: 600px) {
+
+}
+
+/* smartphone */
+@media (max-width: 480px) {
+
+}
+
+/* Small landscape smartphone (iPhone 4) */
+@media (max-width: 480px) and (orientation: landscape) {
+
+}
+
 /* ======================================== MAIN =========================================== */
 
 
@@ -45,8 +74,32 @@ body {
     margin: 0 auto;
 }
 
+/* Lanscape iPad */
+@media (max-width: 1024px) {
+
+    .nav-container {
+        width: 50%;
+    }
+}
+
+/* Portrait iPad */
+@media (max-width: 768px) {
+
+    .nav-container {
+        width: 70%;
+    }
+}
+
+/* Landscape smartphone */
+@media (max-width: 600px) {
+
+    .nav-container {
+        width: 100%;
+    }
+}
+
 .li-wrapper {
-    width: 33%;
+    width: calc(100%/3);
     display: inline-block;
     text-align: center;
     height: 100%;
