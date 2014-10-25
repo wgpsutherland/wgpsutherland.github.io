@@ -41,11 +41,12 @@ body {
 .nav-box {
     border-top: 8px solid black;
     display: block;
-    background-image: url('../images/dusk.jpg');
+    background-image: url('../images/banner.jpg');
     background-position: center top;
     background-size: 100% auto;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    height: 370px;
 }
 
 .nav-box li{
@@ -111,24 +112,13 @@ body {
 }
 
 .labels {
-    width: 100%;
-    opacity: 0;
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 1px;
-    font-size: 16px;
-    transition: opacity .4s;
-}
-
-/* Landscape smartphone */
-@media (max-width: 600px) {
-
-    .labels {
-        font-size: 12px;
-    }
+    visibility: hidden;
+    font-size: 0px;
+    transition: font-size 0.5s;
 }
 
 .profile-wrapper:hover .profile-label, .work-wrapper:hover .work-label, .contact-wrapper:hover .contact-label {
-    opacity: 1;
+    visibility: visible;
+    font-size: 16px;
+    transition: font-size 0.5s;
 }
