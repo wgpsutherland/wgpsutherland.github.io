@@ -1,0 +1,73 @@
+/* ======================================== MAIN =========================================== */
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+/* ======================================== NAV BAR ======================================== */
+
+.nav-box {
+    border-top: 8px solid black;
+    display: block;
+    background-image: url('../images/dusk.jpg');
+    background-position: center top;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.nav-box li{
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+}
+
+.nav-element {
+    width: 100%;
+    padding: none;
+    padding-start: 0px;
+    -webkit-padding-start: 0px;
+    font-size: 0px;
+    margin: 0px;
+}
+
+.nav-element li{
+    /*width: 20%;*/
+    padding: 5% 0 5% 0;
+    margin: 0 auto;
+}
+
+.nav-container {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.li-wrapper {
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+}
+
+.li-wrapper li {
+    width: 100%;
+    background-color: black;
+}
+
+.labels {
+    width: 100%;
+    opacity: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    font-size: 16px;
+    transition: opacity .4s;
+}
+
+.profile-wrapper:hover .profile-label, .work-wrapper:hover .work-label, .contact-wrapper:hover .contact-label {
+    opacity: 1;
+}
