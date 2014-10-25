@@ -121,6 +121,14 @@ body {
     transition: opacity .4s;
 }
 
+/* Landscape smartphone */
+@media (max-width: 600px) {
+
+    .labels {
+        font-size: 12px;
+    }
+}
+
 .profile-wrapper:hover .profile-label, .work-wrapper:hover .work-label, .contact-wrapper:hover .contact-label {
     opacity: 1;
 }
