@@ -34,6 +34,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 16px;
+    overflow-x: none;
 }
 
 h1 {
@@ -49,9 +50,9 @@ h2 {
 .nav-box {
     border-top: 8px solid black;
     display: block;
-    background-image: url('../images/banner.jpg');
+    /*background-image: url('../images/banner.jpg');*/
     background-position: center top;
-    background-size: 100% auto;
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 370px;
@@ -125,15 +126,25 @@ h2 {
     transition: font-size 0.5s;
 }
 
-.profile-wrapper:hover .profile-label, .work-wrapper:hover .work-label, .contact-wrapper:hover .contact-label {
-    visibility: visible;
-    font-size: 16px;
-    transition: font-size 0.5s;
+/* Lanscape iPad */
+@media (min-width: 1025px) {
+
+    .profile-wrapper:hover .profile-label, .work-wrapper:hover .work-label, .contact-wrapper:hover .contact-label {
+        visibility: visible;
+        font-size: 16px;
+        transition: font-size 0.5s;
+    }
 }
+
+
 
 /* ======================================== LOGOS ======================================== */
 
 .fa-large {
     font-size: 3em;
     color: black;
+}
+
+.fa-large:hover {
+    color: rgb(120,120,120);
 }
