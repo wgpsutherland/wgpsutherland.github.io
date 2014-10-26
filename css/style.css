@@ -36,6 +36,14 @@ body {
     font-size: 16px;
 }
 
+h1 {
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 300;
+}
+
 /* ======================================== NAV BAR ======================================== */
 
 .nav-box {
@@ -121,4 +129,11 @@ body {
     visibility: visible;
     font-size: 16px;
     transition: font-size 0.5s;
+}
+
+/* ======================================== LOGOS ======================================== */
+
+.fa-large {
+    font-size: 3em;
+    color: black;
 }
