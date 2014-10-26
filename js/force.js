@@ -11,7 +11,7 @@ window.onload=function() {
 
 	for(var i=0; i<20; i++) {
 		dataset.nodes.push({
-            number: i
+            radius: ((Math.random()*20) + 5)
         });
 	}
 
@@ -38,7 +38,8 @@ window.onload=function() {
 		.append("circle")
 		.attr({
 			r: function(d) {
-                return (Math.random()*30) + 5;
+                console.log(d.radius);
+                return d.radius;
 			},
             cx: function(d) {
                 d.x = d.px = (Math.random()*w);
@@ -51,23 +52,29 @@ window.onload=function() {
 
 	force.on("tick", function(tick) {
 
-        force.alpha(0.1);
+        force.alpha(0.2);
 
 		nodes.attr({
-			cx: function(d) {
-                if(d.x<=0 || d.x>=w) {
-                    d.x = d.px = Math.random()*w;
-                    d.y = d.py = -50;
+            r: function(d) {
+                d.radius = d.radius*1.005;
+
+                if(d.radius>150) {
+                    d.radius = 150;
                 }
+                return d.radius;
+            },
+			cx: function(d) {
 				return d.x;
 			},
 			cy: function(d) {
 
-                if(d.y>=h) {
-                    d.y = d.py = -50;
+                if((d.y-(d.radius/2))>(h+20)) {
+                    d.radius = ((Math.random()*10) + 5);
+                    d.y = d.py = -100;
+                    d.x = d.px = Math.random()*w;
                 }
 
-                d.y = (d.y + 0.1);
+                d.y = (d.y + 0.12);
 				return d.y;
 			}
 		})
