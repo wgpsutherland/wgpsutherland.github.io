@@ -3,7 +3,7 @@ $(function() {
 });
 
 function drift() {
-    var imageSource = "./images/triangle.png";
+    var imageSource = "../images/triangle.png";
     createTriangle(imageSource);
 }
 
