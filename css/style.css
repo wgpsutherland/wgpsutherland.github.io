@@ -58,6 +58,11 @@ h2 {
     height: 370px;
 }
 
+.nav-parent {
+    position: relative;
+    z-index: 10;
+}
+
 .nav-box li{
     display: inline-block;
     color: white;
@@ -135,8 +140,6 @@ h2 {
         transition: font-size 0.5s;
     }
 }
-
-
 
 /* ======================================== LOGOS ======================================== */
 
