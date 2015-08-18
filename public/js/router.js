@@ -38,7 +38,9 @@ define([
             // checks if the page has been rendered before
             if (!$('.page > [data-name="' + pageName + '"]').length) {
                 pages[pageName].render();
-                $('.page').append(pages[pageName].$el.attr('data-name', pageName));
+                var page = $('.page');
+                page.append(pages[pageName].$el.attr('data-name', pageName));
+                page.append(pages[pageName].$el.attr('class', 'fill'));
             }
 
             _.each(pages, function(page, name) {
