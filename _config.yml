@@ -1,6 +1,2 @@
 gems:
   - jekyll-redirect-from
-analytics :
-  provider : google
-  google :
-      tracking_id : 'UA-56256093-2'
