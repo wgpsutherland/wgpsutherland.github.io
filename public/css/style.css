@@ -14,15 +14,29 @@ body, html, .page {
 
 .background {
     height: 100%;
-    background: red;
+    background: #b4ebff;
+}
+
+.title {
+    font-family: 'Open Sans', sans-serif;
 }
 
 .name {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 320px;
     font-size: 5em;
 }
 
-.home-link {
+.home-links {
     text-align: center;
+    font-size: 2em;
+}
+
+.home-links li {
+    display: inline-block;
+}
+
+.home-links a {
+    color: inherit;
+    text-decoration: inherit;
 }

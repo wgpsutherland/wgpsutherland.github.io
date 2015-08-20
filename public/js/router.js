@@ -2,12 +2,16 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'views/pages/Home'
-], function ($, _, Backbone, HomePage) {
+    'views/pages/Home',
+    'views/pages/About',
+    'views/pages/Projects'
+], function ($, _, Backbone, HomePage, AboutPage, ProjectsPage) {
 
     var Router = Backbone.Router.extend({
         routes: {
-            '': 'home'
+            '': 'home',
+            'about': 'about',
+            'projects': 'projects'
         }
     });
 
@@ -18,9 +22,13 @@ define([
             var router = new Router();
 
             var homePage = new HomePage();
+            var aboutPage = new AboutPage();
+            var projectsPage = new ProjectsPage();
 
             var pages = {
-                home: homePage
+                home: homePage,
+                about: aboutPage,
+                projects: projectsPage
             };
 
             router.on('route', function (pageName) {
