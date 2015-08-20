@@ -25,9 +25,12 @@ require.config({
     }
 });
 
-require(['jquery'], function ($) {});
-require(['underscore'], function ($) {});
-require(['backbone'], function ($) {});
+require(['jquery'], function ($) {
+});
+require(['underscore'], function ($) {
+});
+require(['backbone'], function ($) {
+});
 require(['app'], function (App) {
         App.initialize();
     }

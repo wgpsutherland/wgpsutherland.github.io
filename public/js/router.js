@@ -3,11 +3,11 @@ define([
     'underscore',
     'backbone',
     'views/HomePage'
-], function($, _, Backbone, HomePage) {
+], function ($, _, Backbone, HomePage) {
 
     var Router = Backbone.Router.extend({
 
-        initialize: function() {
+        initialize: function () {
 
         },
         routes: {
@@ -15,7 +15,7 @@ define([
         }
     });
 
-    var initialize = function() {
+    var initialize = function () {
 
         var router = new Router();
 
@@ -25,7 +25,7 @@ define([
             home: homePage
         };
 
-        router.on('route', function(pageName) {
+        router.on('route', function (pageName) {
             renderPage(pageName);
         });
 
@@ -43,8 +43,8 @@ define([
                 page.append(pages[pageName].$el.attr('class', 'fill'));
             }
 
-            _.each(pages, function(page, name) {
-                page.$el.toggle(name===pageName);
+            _.each(pages, function (page, name) {
+                page.$el.toggle(name === pageName);
             });
         }
     };
