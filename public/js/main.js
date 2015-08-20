@@ -13,7 +13,7 @@ require.config({
             "./assets/backbone-min"
         ],
         'text': "./assets/text",
-        'templates': "../html"
+        'templates': "../templates"
     },
     shim: {
         backbone: {

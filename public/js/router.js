@@ -40,7 +40,6 @@ define([
                 pages[pageName].render();
                 var page = $('.page');
                 page.append(pages[pageName].$el.attr('data-name', pageName));
-                page.append(pages[pageName].$el.attr('class', 'fill'));
             }
 
             _.each(pages, function (page, name) {
