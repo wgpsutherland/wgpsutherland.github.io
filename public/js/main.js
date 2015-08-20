@@ -31,7 +31,7 @@ require(['underscore'], function ($) {
 });
 require(['backbone'], function ($) {
 });
-require(['app'], function (App) {
-        App.initialize();
+require(['router'], function (Router) {
+        Router.initialize();
     }
 );
