@@ -2,8 +2,9 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'text!templates/Home.html'
-], function ($, _, Backbone, HomeTemplate) {
+    'text!templates/pages/Home.html',
+    'views/sections/HomeTitle'
+], function ($, _, Backbone, HomeTemplate, HomeTitleView) {
 
     return Backbone.View.extend({
 
@@ -13,30 +14,17 @@ define([
 
         initialize: function () {
             console.log('Home page initialising');
+            this.homeTitleView = new HomeTitleView();
         },
 
         render: function () {
+
+            // add page template to the DOM
             this.$el.html(this.template);
-            this.typeText();
-        },
 
-        // create the typing animation
-        typeText: function () {
-            var self = this;
-            var speed = 100;
-            var wordList = 'Will Sutherland'.split('');
-            _.each(wordList, function (letter, i) {
-                setTimeout(function () {
-                    self.appendLetter((i === 0) ? '.type-caret' : '.name span:last-child', letter);
-                },(i + 1) * speed);
-            });
-            setTimeout(function () {
-                self.$('.type-caret').toggleClass('blinker');
-            }, (wordList.length * speed) + 400);
-        },
-
-        appendLetter: function (className, letter) {
-            this.$(className).after("<span>" + letter + "</span>");
+            // render and add views to the DOM
+            this.homeTitleView.render();
+            this.$el.append(this.homeTitleView.$el);
         }
     });
 });

@@ -2,7 +2,7 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'text!templates/Projects.html'
+    'text!templates/pages/Projects.html'
 ], function ($, _, Backbone, ProjectsTemplate) {
 
     return Backbone.View.extend({
@@ -16,6 +16,8 @@ define([
         },
 
         render: function () {
+
+            // add page template to the DOM
             this.$el.html(this.template);
         }
     });
