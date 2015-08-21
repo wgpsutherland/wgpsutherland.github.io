@@ -7,7 +7,7 @@ define([
 
     return Backbone.View.extend({
 
-        className: "fill",
+        className: "fill background",
 
         template: _.template(AboutTemplate),
 
