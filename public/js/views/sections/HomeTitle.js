@@ -36,7 +36,7 @@ define([
         },
 
         appendLetter: function (className, letter) {
-            this.$(className).after("<span>" + letter + "</span>");
+            this.$(className).before("<span>" + letter + "</span>");
         }
     });
 });
