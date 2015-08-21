@@ -25,13 +25,13 @@ define([
             var self = this;
             var speed = 100;
             var wordList = 'Will Sutherland'.split('');
-            _.each(wordList, _.bind(function (letter, i) {
+            _.each(wordList, function (letter, i) {
                 setTimeout(function () {
                     self.appendLetter((i === 0) ? '.type-caret' : '.name span:last-child', letter);
-                }, (i + 1) * speed);
-            }), this);
+                },(i + 1) * speed);
+            });
             setTimeout(function () {
-                self.$('.type-caret').addClass('blinker');
+                self.$('.type-caret').toggleClass('blinker');
             }, (wordList.length * speed) + 400);
         },
 
