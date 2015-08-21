@@ -47,6 +47,10 @@ body, html, .page {
     text-decoration: inherit;
 }
 
+.type-caret {
+    margin-left: -15px;
+}
+
 /* ======================================== ANIMATION =================================== */
 
 .blinker {
