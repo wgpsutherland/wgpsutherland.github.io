@@ -17,6 +17,7 @@ define([
 
         render: function () {
             this.$el.html(this.template);
+            this.verticallyAlign();
             this.type();
         },
 
@@ -28,6 +29,12 @@ define([
 
         // time between each letter being printed
         speed: 100,
+
+        verticallyAlign: function () {
+            this.$('.name').css({
+                'margin-top': ($('.page').outerHeight() / 2) - 100
+            });
+        },
 
         // run the typing animation
         type: function () {
