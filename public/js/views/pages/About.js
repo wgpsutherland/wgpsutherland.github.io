@@ -16,13 +16,16 @@ define([
 
         template: _.template(AboutTemplate),
 
+        views: {
+            me: new MeView(),
+            awards: new AwardsView(),
+            education: new EducationView(),
+            employment: new EmploymentView(),
+            skills: new SkillsView()
+        },
+
         initialize: function () {
             console.log('About page initialising');
-            this.meView = new MeView();
-            this.awardsView = new AwardsView();
-            this.educationView = new EducationView();
-            this.employmentView = new EmploymentView();
-            this.skillsView = new SkillsView();
         },
 
         render: function () {
@@ -31,18 +34,10 @@ define([
             this.$el.html(this.template);
 
             // render and add views to the DOM
-            this.meView.render();
-            this.awardsView.render();
-            this.educationView.render();
-            this.employmentView.render();
-            this.skillsView.render();
-            this.$el.append(
-                this.meView.$el,
-                this.awardsView.$el,
-                this.educationView.$el,
-                this.employmentView.$el,
-                this.skillsView.$el
-            );
+            _.each(this.views, function(view) {
+                view.render();
+                this.$el.append(view.$el);
+            }, this);
         }
     });
 });

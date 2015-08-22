@@ -12,9 +12,12 @@ define([
 
         template: _.template(HomeTemplate),
 
+        views: {
+            homeTitle: new HomeTitleView()
+        },
+
         initialize: function () {
             console.log('Home page initialising');
-            this.homeTitleView = new HomeTitleView();
         },
 
         render: function () {
@@ -23,8 +26,10 @@ define([
             this.$el.html(this.template);
 
             // render and add views to the DOM
-            this.homeTitleView.render();
-            this.$el.append(this.homeTitleView.$el);
+            _.each(this.views, function(view) {
+                view.render();
+                this.$el.append(view.$el);
+            }, this);
         }
     });
 });
