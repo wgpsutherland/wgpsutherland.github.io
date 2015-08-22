@@ -58,6 +58,10 @@ body, html, .page {
     margin-left: -6px;
 }
 
+.link:hover {
+    border-bottom: 2px solid black;
+}
+
 /* ======================================== ANIMATION =================================== */
 
 .blinker {

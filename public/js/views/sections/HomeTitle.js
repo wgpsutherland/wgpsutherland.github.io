@@ -51,8 +51,8 @@ define([
             // create empty list and link shells for each link
             _.each(self.homeLinks, function (link, i) {
                 self.$(".home-links").append(
-                    "<li class=li-" + link + ">" +
-                    "<a class=link-" + link + " href='#/" + link + "'>" +
+                    "<li class='li-" + link + "'>" +
+                    "<a class='link link-" + link + "' href='#/" + link + "'>" +
                     "</a>" +
                     "</li>"
                 );
