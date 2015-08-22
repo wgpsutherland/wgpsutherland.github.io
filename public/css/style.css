@@ -27,7 +27,6 @@ body, html, .page {
 }
 
 .title {
-    /*font-family: 'Open Sans', sans-serif;*/
     font-family: monospace;
 }
 
@@ -62,7 +61,7 @@ body, html, .page {
     border-bottom: 2px solid black;
 }
 
-/* ======================================== ANIMATION =================================== */
+/* ======================================== TYPING ANIMATION =========================== */
 
 .blinker {
     -webkit-animation: blink 1s infinite;
