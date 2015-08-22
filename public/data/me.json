@@ -6,8 +6,20 @@
     "email": "wgpsutherland@gmail.com",
     "social_media": [
       {
-        "type": "twitter",
-        "link": "..."
+        "type": "Twitter",
+        "link": "https://twitter.com/Sutherlandahoy"
+      },
+      {
+        "type": "Instagram",
+        "link": "https://instagram.com/wgpsutherland/"
+      },
+      {
+        "type": "GitHub",
+        "link": "https://github.com/wgpsutherland"
+      },
+      {
+        "type": "LinkedIn",
+        "link": "https://uk.linkedin.com/pub/will-sutherland/102/a65/167"
       }
     ]
   },
