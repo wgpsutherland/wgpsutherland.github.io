@@ -15,6 +15,10 @@ body, html, .page {
     margin: 0;
 }
 
+.clear {
+    opacity: 0;
+}
+
 /* ======================================== HOME PAGE =================================== */
 
 .background {
@@ -33,22 +37,26 @@ body, html, .page {
     font-size: 5em;
 }
 
-.home-links {
+.home-links-div {
     text-align: center;
     font-size: 2em;
 }
 
-.home-links li {
+.home-links-div li {
     display: inline-block;
 }
 
-.home-links a {
+.home-links-div a {
     color: inherit;
     text-decoration: inherit;
 }
 
-.type-caret {
+.name-type-caret {
     margin-left: -15px;
+}
+
+.links-type-caret {
+    margin-left: -6px;
 }
 
 /* ======================================== ANIMATION =================================== */
