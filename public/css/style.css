@@ -61,6 +61,28 @@ body, html, .page {
     border-bottom: 2px solid black;
 }
 
+/* ======================================== ABOUT PAGE ================================= */
+
+.about-page-view {
+    height: 150px;
+}
+
+.me {
+    background-color: #dcffbc;
+}
+.awards {
+    background-color: #ffe9c5;
+}
+.education {
+    background-color: #ffdedf;
+}
+.employment {
+    background-color: #c3b1cd;
+}
+.skills {
+    background-color: #94b8ff;
+}
+
 /* ======================================== TYPING ANIMATION =========================== */
 
 .blinker {

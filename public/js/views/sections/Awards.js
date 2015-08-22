@@ -7,7 +7,7 @@ define([
 
     return Backbone.View.extend({
 
-        className: "",
+        className: "about-page-view awards",
 
         template: _.template(AwardsTemplate),
 

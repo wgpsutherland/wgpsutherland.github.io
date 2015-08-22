@@ -7,7 +7,7 @@ define([
 
     return Backbone.View.extend({
 
-        className: "",
+        className: "about-page-view me",
 
         template: _.template(MeTemplate),
 
