@@ -93,7 +93,7 @@ define([
             var slashLi = $("<li>");
             var list = ["&nbsp;", "/", "/", "&nbsp;"];
             setTimeout(function () {
-                self.$(".li-" + link).append(slashLi);
+                self.$(".li-" + link).after(slashLi);
             }, self.time);
             _.each(list, function (item) {
                 setTimeout(function () {
