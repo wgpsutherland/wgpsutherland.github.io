@@ -1,0 +1,271 @@
+{
+  "info": {
+    "name": "Will Sutherland",
+    "date_of_birth": "9/5/1994",
+    "address": "9 Frog End, Great Wilbraham, Cambridge, Cambridgeshire, CB21 5JB",
+    "email": "wgpsutherland@gmail.com",
+    "social_media": [
+      {
+        "type": "twitter",
+        "link": "..."
+      }
+    ]
+  },
+  "education": [
+    {
+      "name": "The University of Sheffield",
+      "level": "Degree",
+      "course": {
+        "name": "Computer Science",
+        "duration": "3",
+        "type": "BSc"
+      },
+      "start_date": "9/2013",
+      "end_date": "7/2016"
+    },
+    {
+      "name": "The Perse School, Cambridge",
+      "level": "A-Level",
+      "start_date": "2010",
+      "end_date": "2012",
+      "qualifications": [
+        {
+          "name": "Art & Design",
+          "type": "A2",
+          "grade": "A*"
+        },
+        {
+          "name": "Maths",
+          "type": "A2",
+          "grade": "A*"
+        },
+        {
+          "name": "Physics",
+          "type": "A2",
+          "grade": "A*"
+        },
+        {
+          "name": "Art & Design",
+          "type": "AS",
+          "grade": "A"
+        },
+        {
+          "name": "Maths",
+          "type": "AS",
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "type": "AS",
+          "grade": "A"
+        },
+        {
+          "name": "English Literature",
+          "type": "AS",
+          "grade": "A"
+        },
+        {
+          "name": "General Studies",
+          "type": "AS",
+          "grade": "A"
+        }
+      ]
+    },
+    {
+      "name": "The Perse School, Cambridge",
+      "level": "GCSE",
+      "start_date": "2005",
+      "end_date": "2010",
+      "qualifications": [
+        {
+          "name": "Maths",
+          "type": "GCSE",
+          "grade": "A*"
+        },
+        {
+          "name": "English Language",
+          "type": "GCSE",
+          "grade": "A*"
+        },
+        {
+          "name": "English Literature",
+          "type": "GCSE",
+          "grade": "A"
+        },
+        {
+          "name": "Chemistry",
+          "type": "GCSE",
+          "grade": "A*"
+        },
+        {
+          "name": "Biology",
+          "type": "GCSE",
+          "grade": "A*"
+        },
+        {
+          "name": "Physics",
+          "type": "GCSE",
+          "grade": "A*"
+        },
+        {
+          "name": "History",
+          "type": "GCSE",
+          "grade": "A*"
+        },
+        {
+          "name": "Art & Design",
+          "type": "GCSE",
+          "grade": "A*"
+        },
+        {
+          "name": "Philosophy & Ethics",
+          "type": "GCSE",
+          "grade": "A*"
+        },
+        {
+          "name": "French",
+          "type": "GCSE",
+          "grade": "B"
+        }
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "name": "The British Computer Society Eliot Chat Prize for the Best Overall Performance at Level 2",
+      "date_awarded": "6/7/2015",
+      "awarded_by": "The University of Sheffield",
+      "reason": "Awarded for being top of the year in 2nd year."
+    },
+    {
+      "name": "IBM Software Hut Prize",
+      "date_awarded": "6/6/2015",
+      "awarded_by": "The University of Sheffield",
+      "reason": "Awarded for having the best Software Hut project in the year."
+    },
+    {
+      "name": "Client Software Hut Prize",
+      "date_awarded": "6/6/2015",
+      "awarded_by": "The University of Sheffield",
+      "reason": "Awarded for having the best Software Hut project out of the teams working for our client."
+    },
+    {
+      "name": "recognised@HP Commendation",
+      "date_awarded": "6/8/2014",
+      "awarded_by": "Sean Blanchflower, Head of R&D at HP Autonomy",
+      "reason": "Awarded for creating the HP IDOL Query Visualiser, Orbit."
+    },
+    {
+      "name": "John Wiley & Sons Ltd. Prize for the Best Overall Performance at Level 1",
+      "date_awarded": "6/7/2014",
+      "awarded_by": "The University of Sheffield",
+      "reason": "Awarded for being top of the year in 2nd year."
+    },
+    {
+      "name": "epiGenesys Scholarship for Outstanding Academic Achievement",
+      "date_awarded": "6/7/2014",
+      "awarded_by": "The University of Sheffield",
+      "reason": "Awarded for being top of the year after January exams in 1st year."
+    },
+    {
+      "name": "Global Engineering Challenge: Best Overall Solution",
+      "date_awarded": "6/7/2014",
+      "awarded_by": "The University of Sheffield",
+      "reason": "Awarded for having the best project proposal in our hub."
+    }
+  ],
+  "employment": [
+    {
+      "company": "HP Autonomy",
+      "location": "Cambridge, UK",
+      "start": "29/7/2015",
+      "end": "4/9/2015",
+      "role": "Intern",
+      "description": "..."
+    },
+    {
+      "company": "HP Autonomy",
+      "location": "Cambridge, UK",
+      "start": "29/7/2014",
+      "end": "4/9/2014",
+      "role": "Intern",
+      "description": [
+        "Created Orbit, an interactive query visualiser designed to illustrate advanced search techniques within HP's Big Data product suite, using the D3.js graphics library.",
+        "Orbit was demoed to and well received by the executive vice president of HP Software.",
+        "Created a RESTful API to act as an update tracker for HP IDOL servers using Node.js and MySQL, along with a companion CMS built with the frontend JavaScript framework Backbone.js."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "SideRank",
+      "type": "client",
+      "description": "A web application for business employees to evaluate solutions to challenges proposed by their employer. Created for the company sideways6 as part of the module 'Software Hut'. Our application was chosen to be the winner by the client, as well as being chosen as the best application in the year.",
+      "tech": [
+        "Ruby on Rails",
+        "JavaScript",
+        "CSS3",
+        "HTML5"
+      ],
+      "awards": [
+        "IBM Software Hut Prize",
+        "Client Software Hut Prize"
+      ],
+      "images": []
+    },
+    {
+      "name": "Gradients",
+      "type": "personal",
+      "description": "A web application for students to store their grades and track their progress.",
+      "tech": [
+        "Node.js",
+        "Backbone.js",
+        "PostgreSQL",
+        "JavaScript",
+        "CSS3",
+        "HTML5"
+      ],
+      "link": "gradients.herokuapp.com",
+      "code": "https://github.com/wgpsutherland/gradients",
+      "images": []
+    },
+    {
+      "name": "Orbit",
+      "type": "internship",
+      "description": "An interactive query visualiser designed to illustrate advanced search techniques within HP's Big Data product suite.",
+      "tech": [
+        "JavaScript",
+        "CSS3",
+        "HTML5",
+        "D3.js"
+      ],
+      "images": []
+    },
+    {
+      "name": "Update Tracker",
+      "type": "internship",
+      "description": "A RESTful API that tracks updates for HP IDOL servers, along with a companion CMS.",
+      "tech": [
+        "Node.js",
+        "Backbone.js",
+        "MySQL",
+        "JavaScript",
+        "CSS3",
+        "HTML5"
+      ]
+    },
+    {
+      "name": "Phloto",
+      "type": "personal",
+      "description": "Display a user's Instagram posts as a flowing grid.",
+      "tech": [
+        "JavaScript",
+        "CSS3",
+        "HTML5"
+      ],
+      "link": "http://wgpsutherland.github.io/phloto/",
+      "code": "https://github.com/wgpsutherland/phloto",
+      "images": []
+    }
+  ]
+}
