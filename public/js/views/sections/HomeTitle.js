@@ -17,7 +17,7 @@ define([
 
         render: function () {
             this.$el.html(this.template);
-            this.typeText();
+            this.type();
         },
 
         name: 'Will Sutherland',
@@ -26,10 +26,11 @@ define([
 
         time: 0,
 
+        // time between each letter being printed
         speed: 100,
 
-        // create the typing animation
-        typeText: function () {
+        // run the typing animation
+        type: function () {
 
             const self = this;
             const spanTag = "<span>";
@@ -70,8 +71,7 @@ define([
                         self.$(".link-" + link).append($(spanTag).html(letter));
                     }, self.time += self.speed);
                 });
-
-                if (i !== self.homeLinks.length - 1) self.addSlashes(link); // not the last
+                if (i !== self.homeLinks.length - 1) self.addSlashes(link); // if not the last
             });
 
             // at the end of typing make the caret blink
