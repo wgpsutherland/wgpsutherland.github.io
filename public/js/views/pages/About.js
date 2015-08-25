@@ -37,10 +37,11 @@ define([
             // add page template to the DOM
             this.$el.html(this.template);
 
+            // render and add sidebar
             this.views.sidebar.render();
             this.$el.prepend(this.views.sidebar.$el);
 
-            // render and add content views to the contents div in the DOM
+            // render and add content views
             _.each(this.views.content, function(view) {
                 view.render();
                 this.$('.content-container').append(view.$el);
