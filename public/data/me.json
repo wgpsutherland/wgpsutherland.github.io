@@ -4,6 +4,13 @@
     "date_of_birth": "9/5/1994",
     "address": "9 Frog End, Great Wilbraham, Cambridge, Cambridgeshire, CB21 5JB",
     "email": "wgpsutherland@gmail.com",
+    "description": [
+      "Hi!",
+      "I'm Will Sutherland, a Software Developer and student at The University of Sheffield.",
+      "I'm just about the enter the final year of my Computer Science degree.",
+      "I have received multiple awards for my academic excellence and projects.",
+      "I regularly contribute to GitHub, and I have completed 2 internships at HP Autonomy."
+    ],
     "social_media": [
       {
         "type": "Twitter",
