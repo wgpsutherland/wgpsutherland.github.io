@@ -61,7 +61,28 @@ body, html, .page {
     border-bottom: 2px solid black;
 }
 
+/* ======================================== SIDEBAR ==================================== */
+
+.nav-container, .nav-container-fixed {
+    height: 100%;
+    width: 20%;
+}
+
+.nav-container {
+    float: left;
+}
+
+.nav-container-fixed {
+    position: fixed;
+    background-color: #ffb1fd;
+}
+
 /* ======================================== ABOUT PAGE ================================= */
+
+.content-container {
+    width: 80%;
+    float: left;
+}
 
 .about-page-view {
     height: 150px;

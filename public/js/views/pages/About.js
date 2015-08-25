@@ -7,8 +7,9 @@ define([
     'views/sections/Awards',
     'views/sections/Education',
     'views/sections/Employment',
-    'views/sections/Skills'
-], function ($, _, Backbone, AboutTemplate, MeView, AwardsView, EducationView, EmploymentView, SkillsView) {
+    'views/sections/Skills',
+    'views/sections/Sidebar'
+], function ($, _, Backbone, AboutTemplate, MeView, AwardsView, EducationView, EmploymentView, SkillsView, Sidebar) {
 
     return Backbone.View.extend({
 
@@ -17,11 +18,14 @@ define([
         template: _.template(AboutTemplate),
 
         views: {
-            me: new MeView(),
-            awards: new AwardsView(),
-            education: new EducationView(),
-            employment: new EmploymentView(),
-            skills: new SkillsView()
+            sidebar: new Sidebar(),
+            content: {
+                me: new MeView(),
+                awards: new AwardsView(),
+                education: new EducationView(),
+                employment: new EmploymentView(),
+                skills: new SkillsView()
+            }
         },
 
         initialize: function () {
@@ -33,10 +37,13 @@ define([
             // add page template to the DOM
             this.$el.html(this.template);
 
-            // render and add views to the DOM
-            _.each(this.views, function(view) {
+            this.views.sidebar.render();
+            this.$el.prepend(this.views.sidebar.$el);
+
+            // render and add content views to the contents div in the DOM
+            _.each(this.views.content, function(view) {
                 view.render();
-                this.$el.append(view.$el);
+                this.$('.content-container').append(view.$el);
             }, this);
         }
     });

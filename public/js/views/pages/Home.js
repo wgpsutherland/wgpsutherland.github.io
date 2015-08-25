@@ -12,7 +12,7 @@ define([
 
         template: _.template(HomeTemplate),
 
-        views: {
+        contentViews: {
             homeTitle: new HomeTitleView()
         },
 
@@ -26,7 +26,7 @@ define([
             this.$el.html(this.template);
 
             // render and add views to the DOM
-            _.each(this.views, function(view) {
+            _.each(this.contentViews, function(view) {
                 view.render();
                 this.$el.append(view.$el);
             }, this);
