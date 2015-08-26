@@ -7,7 +7,7 @@ define([
 
     return Backbone.View.extend({
 
-        className: "title",
+        className: "title-view",
 
         template: _.template(HomeTitleTemplate),
 
@@ -31,7 +31,7 @@ define([
         speed: 100,
 
         verticallyAlign: function () {
-            this.$('.name').css({
+            this.$('.home-title-name').css({
                 'margin-top': ($('.page').outerHeight() / 2) - 100
             });
         },
@@ -41,12 +41,12 @@ define([
 
             const self = this;
             const spanTag = "<span>";
-            const nameTypingCaret = $(spanTag).text("|").addClass("name-type-caret");
+            const nameTypingCaret = $(spanTag).text("|").addClass("home-title-name-type-caret");
             const linksTypingCaret = $(spanTag).text("|").addClass("links-type-caret");
 
             // add caret to top line
-            self.$(".name").append($(spanTag).addClass("name-follow"));
-            self.$(".name").append(nameTypingCaret);
+            self.$(".home-title-name").append($(spanTag).addClass("home-title-name-follow"));
+            self.$(".home-title-name").append(nameTypingCaret);
 
             // create empty list and link shells for each link
             _.each(self.homeLinks, function (link, i) {
@@ -61,13 +61,13 @@ define([
             // type out the name
             _.each(self.name.split(''), function (letter, i) {
                 setTimeout(function () {
-                    self.$(".name-follow").append($(spanTag).html(letter));
+                    self.$(".home-title-name-follow").append($(spanTag).html(letter));
                 }, self.time += self.speed);
             });
 
             // move the caret down a line
             setTimeout(function () {
-                self.$('.name-type-caret').toggleClass('clear'); // hide, not delete otherwise words jump to fill void
+                self.$('.home-title-name-type-caret').toggleClass('clear'); // hide, not delete otherwise words jump to fill void
                 self.$(".home-links").append(linksTypingCaret);
             }, self.time += self.speed);
 

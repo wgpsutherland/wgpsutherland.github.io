@@ -26,11 +26,13 @@ body, html, .page {
     background: #b4ebff;
 }
 
-.title {
+/* ===================== TITLE VIEW ===================== */
+
+.title-view {
     font-family: monospace;
 }
 
-.name {
+.home-title-name {
     text-align: center;
     font-size: 5em;
 }
@@ -49,7 +51,7 @@ body, html, .page {
     text-decoration: inherit;
 }
 
-.name-type-caret {
+.home-title-name-type-caret {
     margin-left: -15px;
 }
 
@@ -61,7 +63,13 @@ body, html, .page {
     border-bottom: 2px solid black;
 }
 
-/* ======================================== SIDEBAR ==================================== */
+.blinker {
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+}
+
+/* ======================================== SIDEBAR ===================================== */
 
 .nav-container, .nav-container-fixed {
     height: 100%;
@@ -104,13 +112,7 @@ body, html, .page {
     background-color: #94b8ff;
 }
 
-/* ======================================== TYPING ANIMATION =========================== */
-
-.blinker {
-    -webkit-animation: blink 1s infinite;
-    -moz-animation: blink 1s infinite;
-    animation: blink 1s infinite;
-}
+/* ======================================== ANIMATIONS ================================ */
 
 @keyframes blink {
     0% {
