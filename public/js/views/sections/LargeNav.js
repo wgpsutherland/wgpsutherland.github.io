@@ -9,7 +9,15 @@ define([
 
         className: "large-nav",
 
-        template: _.template(LargeNavTemplate),
+        template: _.template(LargeNavTemplate)({
+            views: [
+                'me',
+                'awards',
+                'education',
+                'employment',
+                'skills'
+            ]
+        }),
 
         initialize: function () {
             console.log('Large nav view initialising');

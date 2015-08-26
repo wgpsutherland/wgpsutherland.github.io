@@ -4,6 +4,7 @@ body, html, .page {
     height: 100%;
     padding: 0;
     margin: 0;
+    font-family: monospace;
 }
 
 .fill {
@@ -29,7 +30,7 @@ body, html, .page {
 /* ===================== TITLE VIEW ===================== */
 
 .title-view {
-    font-family: monospace;
+
 }
 
 .home-title-name {
@@ -100,8 +101,14 @@ body, html, .page {
 /* ===================== NAV ======================= */
 
 .large-nav {
-    height: 200px;
     background-color: white;
+    padding: 10px 0;
+}
+
+.nav-link {
+    text-align: center;
+    width: 100%;
+    margin: 0;
 }
 
 /* ===================== VIEWS ===================== */
