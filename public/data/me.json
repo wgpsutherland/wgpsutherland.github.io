@@ -6,9 +6,8 @@
     "email": "wgpsutherland@gmail.com",
     "description": [
       "Hi!",
-      "I'm Will Sutherland, a Software Developer and student at The University of Sheffield.",
-      "I'm just about the enter the final year of my Computer Science degree.",
-      "I have received multiple awards for my academic excellence and projects.",
+      "I'm Will Sutherland, a Software Developer and student at The University of Sheffield, entering the final year of my Computer Science degree.",
+      "I have received multiple awards from the university for my academic excellence and projects, and I am a member of the University Hockey Club and the Computer Science Society Football Team.",
       "I regularly contribute to GitHub, and I have completed 2 internships at HP Autonomy."
     ],
     "social_media": [
@@ -246,6 +245,20 @@
       ],
       "link": "gradients.herokuapp.com",
       "code": "https://github.com/wgpsutherland/gradients",
+      "images": []
+    },
+    {
+      "name": "Cisco IoE Challenge",
+      "type": "hackathon",
+      "description": "Proactively manage the passenger flow at Transport Service Facilities in Greater Manchester.",
+      "tech": [
+        "Node.js",
+        "Backbone.js",
+        "JavaScript",
+        "CSS3",
+        "HTML5"
+      ],
+      "link": "http://www.ciscocreate.co.uk/news-events/2015/3/5/ioe-challenge-media-city-uk-24hr-hackathon-to-develop-new-ioe-solutions",
       "images": []
     },
     {
