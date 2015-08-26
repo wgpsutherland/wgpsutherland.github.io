@@ -69,7 +69,7 @@ body, html, .page {
     animation: blink 1s infinite;
 }
 
-/* ======================================== SIDEBAR ===================================== */
+/* ===================== SIDEBAR ===================== */
 
 .nav-container, .nav-container-fixed {
     height: 100%;
@@ -96,6 +96,15 @@ body, html, .page {
 .about-page-view {
     height: 150px;
 }
+
+/* ===================== NAV ======================= */
+
+.large-nav {
+    height: 200px;
+    background-color: white;
+}
+
+/* ===================== VIEWS ===================== */
 
 .me {
     background-color: #dcffbc;
