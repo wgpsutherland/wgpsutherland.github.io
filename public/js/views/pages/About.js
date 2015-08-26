@@ -47,7 +47,6 @@ define([
 
             // render and add content views
             _.each(this.views.content, function (view) {
-                view.render();
                 this.$('.content-container').append(view.$el);
             }, this);
         }

@@ -1,0 +1,17 @@
+<div class="container">
+
+    <!-- bio -->
+    <% _.each(description, function(line, i) { %>
+    <p>
+        <% if (i === 0) { %> <strong> <% } %>
+            <%= line %>
+        <% if (i === 0) { %> </strong> <% } %>
+    </p>
+    <% }); %>
+
+    <!-- social media -->
+    <% _.each(media, function(item) { %>
+        <a href="<%= item.link %>"><%= item.type %></a>
+    <% }); %>
+
+</div>
