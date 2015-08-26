@@ -87,8 +87,9 @@ body, html, .page {
 
 /* ======================================== ABOUT PAGE ================================= */
 
+
 .content-container {
-    width: 80%;
+    width: 100%;
     float: left;
 }
 
