@@ -3,7 +3,7 @@ define([
     'underscore',
     'backbone',
     'text!templates/sections/Awards.html',
-    '../../collections/goodbye'
+    '../../collections/Awards'
 ], function ($, _, Backbone, AwardsTemplate, AwardsCollection) {
 
     return Backbone.View.extend({
