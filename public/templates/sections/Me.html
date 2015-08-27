@@ -2,11 +2,13 @@
 
     <!-- bio -->
     <% _.each(description, function(line, i) { %>
-    <p>
-        <% if (i === 0) { %> <strong> <% } %>
-            <%= line %>
-        <% if (i === 0) { %> </strong> <% } %>
-    </p>
+
+        <% if (i === 0) { %>
+            <h1 class="me-view-header"><%= line %></h1>
+        <% } else { %>
+            <p><%= line %></p>
+        <% } %>
+
     <% }); %>
 
     <!-- social media -->

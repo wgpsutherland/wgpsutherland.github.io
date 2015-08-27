@@ -117,6 +117,10 @@ body, html, .page {
 .me {
     background-color: #dcffbc;
 }
+.me-view-header {
+    text-align: center;
+    font-size: 6em;
+}
 .awards {
     background-color: #ffe9c5;
 }
