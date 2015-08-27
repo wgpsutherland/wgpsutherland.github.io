@@ -12,10 +12,9 @@ define([
 
         template: _.template(AwardsTemplate),
 
-        awardsCollection: new AwardsCollection(),
-
         initialize: function () {
             console.log('Awards view initialising');
+            this.awardsCollection = new AwardsCollection();
             this.listenTo(this.awardsCollection, 'add', this.render);
         },
 
