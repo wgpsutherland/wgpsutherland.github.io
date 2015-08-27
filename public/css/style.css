@@ -112,26 +112,30 @@ body, html, .page {
     margin: 0;
 }
 
-/* ===================== VIEWS ===================== */
+/* ===================== ME VIEW ==================== */
 
 .me {
-    background-color: #dcffbc;
+    background-color: #F4F9F9;
 }
+
 .me-view-header {
     text-align: center;
     font-size: 6em;
 }
+
+/* ===================== VIEWs ====================== */
+
 .awards {
-    background-color: #ffe9c5;
+    background-color: #ECFFF1;
 }
 .education {
-    background-color: #ffdedf;
+    background-color: #F4F9F9;
 }
 .employment {
-    background-color: #c3b1cd;
+    background-color: #ECFFF1;
 }
 .skills {
-    background-color: #94b8ff;
+    background-color: #F4F9F9;
 }
 
 /* ======================================== ANIMATIONS ================================ */
