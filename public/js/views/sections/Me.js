@@ -3,8 +3,8 @@ define([
     'underscore',
     'backbone',
     'text!templates/sections/Me.html',
-    'models/info'
-], function ($, _, Backbone, MeTemplate, infoModel) {
+    'models/Info'
+], function ($, _, Backbone, MeTemplate, InfoModel) {
 
     return Backbone.View.extend({
 
@@ -12,10 +12,9 @@ define([
 
         template: _.template(MeTemplate),
 
-        infoModel: new infoModel(),
-
         initialize: function () {
             console.log('Me view initialising');
+            this.infoModel = new InfoModel();
             this.listenTo(this.infoModel, 'change', this.render);
         },
 

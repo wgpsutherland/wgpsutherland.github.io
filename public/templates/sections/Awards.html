@@ -1,0 +1,11 @@
+<div class="container">
+
+    <% awardsCollection.each(function(award) { %>
+
+        <p><strong><%= award.get('name') %></strong></p>
+        <p><%= award.get('reason') %></p>
+        <br>
+
+    <% }); %>
+
+</div>

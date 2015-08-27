@@ -45,7 +45,7 @@ define([
             nav.render();
             this.$el.prepend(nav.$el);
 
-            // render and add content views
+            // add content views
             _.each(this.views.content, function (view) {
                 this.$('.content-container').append(view.$el);
             }, this);
