@@ -25,7 +25,7 @@ define([
             this.type();
         },
 
-        name: 'Will Sutherland'.split(''),
+        name: 'Will Sutherland',
 
         homeLinks: ['about', 'projects'],
 
@@ -47,42 +47,45 @@ define([
 
             // type out the name
             _.each(self.name, function (letter, i) {
-                setTimeout(function () {
-                    self.$(".title-letter-" + i).html(letter);
-                }, self.time += self.speed);
+                self.addWithTimeout(".title-letter-" + i, letter, self.speed);
             });
 
             // move the caret down a line (toggle visibility)
-            setTimeout(function () {
-                // hide, not delete otherwise words jump to fill void
-                self.$('.type-caret').toggleClass('clear');
-            }, self.time += self.speed);
+            self.toggleWithTimeout('.type-caret', 'clear', self.speed);
 
             // type out the links
             _.each(self.homeLinks, function (link, i) {
                 _.each(link.split(''), function (letter, j) {
-                    setTimeout(function () {
-                        self.$(".link-" + link + " > .links-letter-" + j).html(letter);
-                    }, self.time += self.speed);
+                    self.addWithTimeout(".link-" + link + " > .links-letter-" + j, letter, self.speed);
                 });
                 if (i !== self.homeLinks.length - 1) self.addSlashes(i); // if not the last
             });
 
             // at the end of typing make the caret blink
-            setTimeout(function () {
-                self.$('.links-type-caret').toggleClass('blinker');
-            }, self.time += (self.speed * 4));
+            self.toggleWithTimeout('.links-type-caret', 'blinker', self.speed * 4);
         },
 
         // adds ' // ' after a link
         addSlashes: function (i) {
-            var self = this;
+            const self = this;
             var list = ["&nbsp;", "/", "/", "&nbsp;"];
             _.each(list, function (item, j) {
-                setTimeout(function () {
-                    self.$(".slash-list-" + i + " > .slash-" + j).html(item);
-                }, self.time += self.speed);
+                self.addWithTimeout(".slash-list-" + i + " > .slash-" + j, item, self.speed);
             });
+        },
+
+        addWithTimeout: function(target, item, increment) {
+            const self = this;
+            setTimeout(function () {
+                self.$(target).html(item);
+            }, self.time += increment);
+        },
+
+        toggleWithTimeout: function(target, className, increment) {
+            const self = this;
+            setTimeout(function () {
+                self.$(target).toggleClass(className);
+            }, self.time += increment);
         }
     });
 });

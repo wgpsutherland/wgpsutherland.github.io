@@ -3,7 +3,7 @@
     <div class="home-title-name">
 
         <span class="home-title-name-follow"></span>
-        <% _.each(title, function(letter, i) {
+        <% _.each(title.split(''), function(letter, i) {
         %><span class="title-letter-<%= i %>"></span><%
         }); %><span class="home-title-name-type-caret type-caret">|</span>
 
