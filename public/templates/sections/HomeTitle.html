@@ -1,8 +1,38 @@
+<!-- IMPORTANT: formatting must be kept like this to avoid the html being rendered with unwanted white space-->
 <div class="row">
-    <div class="home-title-name"></div>
+    <div class="home-title-name">
+
+        <span class="home-title-name-follow"></span>
+        <% _.each(title, function(letter, i) {
+        %><span class="title-letter-<%= i %>"></span><%
+        }); %><span class="home-title-name-type-caret type-caret">|</span>
+
+    </div>
 </div>
 <div class="row">
     <div class="home-links-div">
-        <ul class="home-links"></ul>
+        <ul class="home-links">
+
+            <!-- empty list and link shells -->
+            <% _.each(links, function(link, i) {
+            %><li class="li-<%=link%>">
+                <a class="link link-<%=link%>" href="#/<%=link%>">
+
+                    <!-- empty span for each letter in the link name -->
+                    <% _.each(link.split(''), function(letter, j) {
+                    %><span class="links-letter-<%= j %>"></span><%
+                    }); %>
+
+                </a>
+
+            <!-- add empty spans for ' // ' insertion -->
+            </li><% if(i !== links.length - 1) {
+            %><li class="slash-list-<%= i %>"><span class="slash-0"></span
+                ><span class="slash-1"></span
+                ><span class="slash-2"></span
+                ><span class="slash-3"></span></li><% }
+            }); %><span class="links-type-caret type-caret clear">|</span>
+
+        </ul>
     </div>
 </div>

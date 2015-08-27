@@ -16,12 +16,16 @@ define([
         },
 
         render: function () {
-            this.$el.html(this.template);
+            var template = this.template({
+                title: this.name,
+                links: this.homeLinks
+            });
+            this.$el.html(template);
             this.verticallyAlign();
             this.type();
         },
 
-        name: 'Will Sutherland',
+        name: 'Will Sutherland'.split(''),
 
         homeLinks: ['about', 'projects'],
 
@@ -40,45 +44,28 @@ define([
         type: function () {
 
             const self = this;
-            const spanTag = "<span>";
-            const nameTypingCaret = $(spanTag).text("|").addClass("home-title-name-type-caret");
-            const linksTypingCaret = $(spanTag).text("|").addClass("links-type-caret");
-
-            // add caret to top line
-            self.$(".home-title-name").append($(spanTag).addClass("home-title-name-follow"));
-            self.$(".home-title-name").append(nameTypingCaret);
-
-            // create empty list and link shells for each link
-            _.each(self.homeLinks, function (link, i) {
-                self.$(".home-links").append(
-                    "<li class='li-" + link + "'>" +
-                    "<a class='link link-" + link + "' href='#/" + link + "'>" +
-                    "</a>" +
-                    "</li>"
-                );
-            });
 
             // type out the name
-            _.each(self.name.split(''), function (letter, i) {
+            _.each(self.name, function (letter, i) {
                 setTimeout(function () {
-                    self.$(".home-title-name-follow").append($(spanTag).html(letter));
+                    self.$(".title-letter-" + i).html(letter);
                 }, self.time += self.speed);
             });
 
-            // move the caret down a line
+            // move the caret down a line (toggle visibility)
             setTimeout(function () {
-                self.$('.home-title-name-type-caret').toggleClass('clear'); // hide, not delete otherwise words jump to fill void
-                self.$(".home-links").append(linksTypingCaret);
+                // hide, not delete otherwise words jump to fill void
+                self.$('.type-caret').toggleClass('clear');
             }, self.time += self.speed);
 
             // type out the links
             _.each(self.homeLinks, function (link, i) {
-                _.each(link.split(''), function (letter) {
+                _.each(link.split(''), function (letter, j) {
                     setTimeout(function () {
-                        self.$(".link-" + link).append($(spanTag).html(letter));
+                        self.$(".link-" + link + " > .links-letter-" + j).html(letter);
                     }, self.time += self.speed);
                 });
-                if (i !== self.homeLinks.length - 1) self.addSlashes(link); // if not the last
+                if (i !== self.homeLinks.length - 1) self.addSlashes(i); // if not the last
             });
 
             // at the end of typing make the caret blink
@@ -88,16 +75,12 @@ define([
         },
 
         // adds ' // ' after a link
-        addSlashes: function (link) {
+        addSlashes: function (i) {
             var self = this;
-            var slashLi = $("<li>");
             var list = ["&nbsp;", "/", "/", "&nbsp;"];
-            setTimeout(function () {
-                self.$(".li-" + link).after(slashLi);
-            }, self.time);
-            _.each(list, function (item) {
+            _.each(list, function (item, j) {
                 setTimeout(function () {
-                    slashLi.append(($("<span>").html(item)));
+                    self.$(".slash-list-" + i + " > .slash-" + j).html(item);
                 }, self.time += self.speed);
             });
         }
