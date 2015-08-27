@@ -3,7 +3,7 @@ define([
     'underscore',
     'backbone',
     'text!templates/sections/Me.html',
-    'models/Info'
+    '../../models/Info'
 ], function ($, _, Backbone, MeTemplate, InfoModel) {
 
     return Backbone.View.extend({
