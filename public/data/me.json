@@ -232,6 +232,34 @@
       "images": []
     },
     {
+      "name": "willsuther.land",
+      "type": "personal",
+      "description": "My portfolio site.",
+      "tech": [
+        "Backbone.js",
+        "JavaScript",
+        "CSS3",
+        "HTML5"
+      ],
+      "link": "willsuther.land",
+      "code": "https://github.com/wgpsutherland/wgpsutherland.github.io",
+      "images": []
+    },
+    {
+      "name": "blog",
+      "type": "personal",
+      "description": "My blog, written using Jekyll, the static site generator.",
+      "tech": [
+        "Jekyll",
+        "Markdown",
+        "CSS3",
+        "HTML5"
+      ],
+      "link": "willsuther.land/blog",
+      "code": "https://github.com/wgpsutherland/blog",
+      "images": []
+    },
+    {
       "name": "Gradients",
       "type": "personal",
       "description": "A web application for students to store their grades and track their progress.",
