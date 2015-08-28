@@ -48,6 +48,10 @@ body, html, .page {
 
 /* ======================================== VIEWS ======================================= */
 
+.view-header {
+    font-size: 5em;
+}
+
 .awards {
     background-color: #ECFFF1;
 }
@@ -113,7 +117,6 @@ body, html, .page {
 
 .me h1 {
     color: #7BD2D2;
-    font-size: 5em;
 }
 
 .me-view-header {
@@ -130,7 +133,6 @@ body, html, .page {
 .me-view-img-container {
     padding: 25px;
 }
-
 
 .me p {
     text-align: center;
