@@ -19,10 +19,6 @@ body, html, .page {
     font-family: 'open sans', sans-serif;
 }
 
-.fill {
-    height: 100%;
-}
-
 .row {
     width: 100%;
     margin: 0;
@@ -32,19 +28,44 @@ body, html, .page {
     opacity: 0;
 }
 
-/* ======================================== HOME PAGE =================================== */
-
-.background {
+.full-height-view {
     height: 100%;
-    /*background: #b4ebff;*/
-    background: white;
+}
+
+/* ======================================== PAGES ======================================= */
+
+/* =====================  ABOUT PAGE ===================== */
+
+.content-container {
+    width: 100%;
+    float: left;
+}
+
+.about-page-view {
+    min-height: 150px;
+    padding: 20px 0;
+}
+
+/* ======================================== VIEWS ======================================= */
+
+.awards {
+    background-color: #ECFFF1;
+}
+.education {
+    background-color: #F4F9F9;
+}
+.employment {
+    background-color: #ECFFF1;
+}
+.skills {
+    background-color: #F4F9F9;
 }
 
 /* ===================== TITLE VIEW ===================== */
 
 .title-view {
     font-family: monospace;
-    height: 100%;
+    background-color: white;
 }
 
 .home-title-name {
@@ -84,57 +105,10 @@ body, html, .page {
     animation: blink 1s infinite;
 }
 
-/* ===================== SIDEBAR ===================== */
-
-.nav-container, .nav-container-fixed {
-    height: 100%;
-    width: 20%;
-}
-
-.nav-container {
-    float: left;
-}
-
-.nav-container-fixed {
-    position: fixed;
-    background-color: #ffb1fd;
-}
-
-/* ======================================== ABOUT PAGE ================================= */
-
-
-.content-container {
-    width: 100%;
-    float: left;
-}
-
-.about-page-view {
-    min-height: 150px;
-    padding: 20px 0;
-}
-
-/* ===================== NAV ======================= */
-
-.large-nav {
-    background-color: white;
-}
-
-.nav-link {
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    padding: 10px 0;
-    border-bottom: 2px solid transparent;
-}
-
-.nav-link:hover {
-    border-bottom: 2px solid black;
-}
-
 /* ===================== ME VIEW ==================== */
 
 .me {
-    background-color: #F4F9F9;
+    background-color: #3CFFFF;
 }
 
 .me-view-header {
@@ -163,19 +137,40 @@ body, html, .page {
     text-align: center;
 }
 
-/* ===================== VIEWs ====================== */
+/* ======================================== NAVS ========================================= */
 
-.awards {
-    background-color: #ECFFF1;
+/* ===================== SIDEBAR ===================== */
+
+.nav-container, .nav-container-fixed {
+    height: 100%;
+    width: 20%;
 }
-.education {
-    background-color: #F4F9F9;
+
+.nav-container {
+    float: left;
 }
-.employment {
-    background-color: #ECFFF1;
+
+.nav-container-fixed {
+    position: fixed;
+    background-color: #ffb1fd;
 }
-.skills {
-    background-color: #F4F9F9;
+
+/* ===================== NAV ======================= */
+
+.large-nav {
+    background-color: white;
+}
+
+.nav-link {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid black;
 }
 
 /* ======================================== ANIMATIONS ================================ */

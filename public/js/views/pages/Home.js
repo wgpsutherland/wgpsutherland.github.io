@@ -9,7 +9,7 @@ define([
 
     return Backbone.View.extend({
 
-        className: "fill background",
+        className: "full-height-view",
 
         template: _.template(HomeTemplate),
 
