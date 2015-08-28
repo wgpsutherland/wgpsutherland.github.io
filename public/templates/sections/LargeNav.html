@@ -2,10 +2,15 @@
     <div class="row">
         <div class="col-xs-1"></div>
 
-        <% _.each(views, function(name) { %>
+        <% _.each(views, function(view) { %>
 
-        <div class="col-xs-2 thing">
-            <p class="nav-link"><strong><%= name %></strong></p>
+        <div class="col-xs-2">
+            <p class="nav-link">
+                <strong>
+                    <span class="fa fa-<%= view.icon %>"></span>
+                    <%= view.name %>
+                </strong>
+            </p>
         </div>
 
         <% }); %>

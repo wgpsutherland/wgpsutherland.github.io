@@ -11,11 +11,11 @@ define([
 
         template: _.template(LargeNavTemplate)({
             views: [
-                'me',
-                'awards',
-                'education',
-                'employment',
-                'skills'
+                {name: 'me', icon: 'child'},
+                {name: 'awards', icon: 'trophy'},
+                {name: 'education', icon: 'graduation-cap'},
+                {name: 'employment', icon: 'briefcase'},
+                {name: 'skills', icon: 'code'}
             ]
         }),
 

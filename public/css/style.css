@@ -1,5 +1,17 @@
 /* ======================================== BODY ======================================== */
 
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
 body, html, .page {
     height: 100%;
     padding: 0;
@@ -111,6 +123,11 @@ body, html, .page {
     width: 100%;
     margin: 0;
     padding: 10px 0;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid black;
 }
 
 /* ===================== ME VIEW ==================== */
