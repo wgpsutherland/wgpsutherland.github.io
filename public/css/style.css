@@ -141,6 +141,27 @@ body, html, .page {
     font-size: 6em;
 }
 
+.me-view-img {
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+}
+
+.me-view-img-container {
+    padding: 25px;
+}
+
+
+.me  p {
+    text-align: center;
+}
+
+.me-view-social-wrapper {
+    padding-top: 10px;
+    font-size: 2em;
+    text-align: center;
+}
+
 /* ===================== VIEWs ====================== */
 
 .awards {

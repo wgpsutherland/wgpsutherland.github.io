@@ -5,27 +5,32 @@
     "address": "Cambridge / Sheffield, UK",
     "email": "wgpsutherland@gmail.com",
     "description": [
-      "Hi!",
-      "I'm Will Sutherland, a Software Developer and student at The University of Sheffield, entering the final year of my Computer Science degree.",
-      "I have received multiple awards from the university for my academic excellence and projects, and I am a member of the University Hockey Club and the Computer Science Society Football Team.",
+      "I'm Will Sutherland, a Software Developer and student at The University of Sheffield.",
+      "I am Entering the final year of my Computer Science degree.",
+      "I have received multiple awards from the university for my academic excellence and projects.",
+      "I am a member of the University Hockey Club and the Computer Science Society Football Team.",
       "I regularly contribute to GitHub, and I have completed 2 internships at HP Autonomy."
     ],
     "social_media": [
       {
         "type": "Twitter",
-        "link": "https://twitter.com/Sutherlandahoy"
+        "link": "https://twitter.com/Sutherlandahoy",
+        "icon": "twitter-square"
       },
       {
         "type": "Instagram",
-        "link": "https://instagram.com/wgpsutherland/"
+        "link": "https://instagram.com/wgpsutherland/",
+        "icon": "instagram"
       },
       {
         "type": "GitHub",
-        "link": "https://github.com/wgpsutherland"
+        "link": "https://github.com/wgpsutherland",
+        "icon": "github-square"
       },
       {
         "type": "LinkedIn",
-        "link": "https://uk.linkedin.com/pub/will-sutherland/102/a65/167"
+        "link": "https://uk.linkedin.com/pub/will-sutherland/102/a65/167",
+        "icon": "linkedin-square"
       }
     ]
   },

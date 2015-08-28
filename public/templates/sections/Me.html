@@ -1,19 +1,28 @@
 <div class="container">
 
+    <div class="me-view-img-container">
+        <img src="public/images/me.png" alt="a photo of Will Sutherland" class="img-circle me-view-img">
+    </div>
+
     <!-- bio -->
     <% _.each(description, function(line, i) { %>
 
-        <% if (i === 0) { %>
-            <h1 class="me-view-header"><%= line %></h1>
-        <% } else { %>
-            <p><%= line %></p>
-        <% } %>
+        <p><%= line %></p>
 
     <% }); %>
 
     <!-- social media -->
-    <% _.each(media, function(item) { %>
-        <a href="<%= item.link %>"><%= item.type %></a>
-    <% }); %>
+    <div class="me-view-social-wrapper">
+        <div class="col-xs-4"></div>
+        <% _.each(media, function(item) { %>
+        <div class="col-xs-1">
+            <a href="<%= item.link %>">
+                <span class="fa fa-<%= item.icon %>">
 
+                </span>
+            </a>
+        </div>
+        <% }); %>
+        <div class="col-xs-4"></div>
+    </div>
 </div>

@@ -14,7 +14,7 @@ define([
                 {name: 'me', icon: 'child'},
                 {name: 'awards', icon: 'trophy'},
                 {name: 'education', icon: 'graduation-cap'},
-                {name: 'employment', icon: 'briefcase'},
+                {name: 'jobs', icon: 'briefcase'},
                 {name: 'skills', icon: 'code'}
             ]
         }),
