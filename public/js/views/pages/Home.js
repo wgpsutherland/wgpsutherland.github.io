@@ -4,8 +4,12 @@ define([
     'backbone',
     'text!templates/pages/Home.html',
     'views/sections/HomeTitle',
-    'views/sections/Me'
-], function ($, _, Backbone, HomeTemplate, HomeTitleView, MeView) {
+    'views/sections/Me',
+    'views/sections/Awards',
+    'views/sections/Education',
+    'views/sections/Employment',
+    'views/sections/Skills'
+], function ($, _, Backbone, HomeTemplate, HomeTitleView, MeView, AwardsView, EducationView, EmploymentView, SkillsView) {
 
     return Backbone.View.extend({
 
@@ -15,7 +19,11 @@ define([
 
         contentViews: {
             homeTitle: new HomeTitleView(),
-            me: new MeView()
+            me: new MeView(),
+            awards: new AwardsView(),
+            education: new EducationView(),
+            employment: new EmploymentView(),
+            skills: new SkillsView()
         },
 
         initialize: function () {

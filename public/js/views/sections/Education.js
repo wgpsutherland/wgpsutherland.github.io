@@ -7,7 +7,7 @@ define([
 
     return Backbone.View.extend({
 
-        className: "about-page-view education",
+        className: "education full-height-view",
 
         template: _.template(EducationTemplate),
 

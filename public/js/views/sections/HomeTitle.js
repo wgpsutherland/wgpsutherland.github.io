@@ -27,7 +27,7 @@ define([
 
         name: 'Will Sutherland',
 
-        homeLinks: ['about', 'projects'],
+        homeLinks: ['projects'],
 
         time: 0,
 
