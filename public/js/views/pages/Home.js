@@ -3,8 +3,9 @@ define([
     'underscore',
     'backbone',
     'text!templates/pages/Home.html',
-    'views/sections/HomeTitle'
-], function ($, _, Backbone, HomeTemplate, HomeTitleView) {
+    'views/sections/HomeTitle',
+    'views/sections/Me'
+], function ($, _, Backbone, HomeTemplate, HomeTitleView, MeView) {
 
     return Backbone.View.extend({
 
@@ -13,7 +14,8 @@ define([
         template: _.template(HomeTemplate),
 
         contentViews: {
-            homeTitle: new HomeTitleView()
+            homeTitle: new HomeTitleView(),
+            me: new MeView()
         },
 
         initialize: function () {

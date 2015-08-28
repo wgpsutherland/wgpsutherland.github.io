@@ -44,6 +44,7 @@ body, html, .page {
 
 .title-view {
     font-family: monospace;
+    height: 100%;
 }
 
 .home-title-name {

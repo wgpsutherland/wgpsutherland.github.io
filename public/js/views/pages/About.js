@@ -23,7 +23,6 @@ define([
             nav: new LargeNavView(),
             sidebar: new Sidebar(),
             content: {
-                me: new MeView(),
                 awards: new AwardsView(),
                 education: new EducationView(),
                 employment: new EmploymentView(),
