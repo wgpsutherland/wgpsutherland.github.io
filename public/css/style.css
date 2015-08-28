@@ -111,6 +111,11 @@ body, html, .page {
     background-color: #3CFFFF;
 }
 
+.me h1 {
+    color: #7BD2D2;
+    font-size: 5em;
+}
+
 .me-view-header {
     text-align: center;
     font-size: 6em;
@@ -127,7 +132,7 @@ body, html, .page {
 }
 
 
-.me  p {
+.me p {
     text-align: center;
 }
 
