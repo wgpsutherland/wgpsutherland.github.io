@@ -57,23 +57,11 @@ body, html, .page {
 .view-header {
     font-size: 5em;
     margin: 0;
+    margin-bottom: 25px;
 }
 
 .home-view {
     padding: 20px 0;
-}
-
-.awards {
-    background-color: #ECFFF1;
-}
-.education {
-    background-color: #F4F9F9;
-}
-.employment {
-    background-color: #ECFFF1;
-}
-.skills {
-    background-color: #F4F9F9;
 }
 
 /* ===================== TITLE VIEW ===================== */
@@ -130,11 +118,6 @@ body, html, .page {
     color: #7BD2D2;
 }
 
-.me-view-header {
-    text-align: center;
-    font-size: 6em;
-}
-
 .me-view-img {
     display: block;
     margin: 0 auto;
@@ -142,7 +125,7 @@ body, html, .page {
 }
 
 .me-view-img-container {
-    padding-top: 25px;
+    /*padding-top: 25px;*/
 }
 
 .me p {
@@ -153,6 +136,54 @@ body, html, .page {
     padding: 20px 0;
     font-size: 2em;
     text-align: center;
+}
+
+/* ===================== AWARDS VIEW ===================== */
+
+.awards {
+    background-color: #1B012F;
+    color: black;
+}
+
+.awards h1 {
+    color: #A28FAD;
+}
+
+.award-row {
+    height: 200px;
+}
+
+.award-outer-wrapper {
+    padding: 5px;
+}
+
+.award-outer-wrapper, .award-inner-wrapper {
+    height: 100%;
+}
+
+.award-inner-wrapper {
+    padding: 10px;
+}
+.award-inner-wrapper {
+    background-color: #FEF3FF;
+}
+
+/* ===================== EDUCATION VIEW ===================== */
+
+.education {
+    background-color: #F4F9F9;
+}
+
+/* ===================== EMPLOYMENT VIEW ===================== */
+
+.employment {
+    background-color: #ECFFF1;
+}
+
+/* ===================== SKILLS VIEW ===================== */
+
+.skills {
+    background-color: #F4F9F9;
 }
 
 /* ======================================== NAVS ========================================= */
