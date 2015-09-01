@@ -157,28 +157,28 @@
       "name": "The British Computer Society Eliot Chat Prize for the Best Overall Performance at Level 2",
       "date_awarded": "2015",
       "awarded_by": "The University of Sheffield",
-      "reason": "being top of the year in 2nd year.",
+      "reason": "being ranked top of the year in 2nd year.",
       "image": "bcs"
     },
     {
       "name": "IBM Software Hut Prize",
       "date_awarded": "2015",
       "awarded_by": "The University of Sheffield",
-      "reason": "having the best Software Hut project in the year.",
+      "reason": "creating the best piece of software in the year during the 'Software Hut' module, where we had to create an application for a real world client.",
       "image": "ibm"
     },
     {
       "name": "Client Software Hut Prize",
       "date_awarded": "2015",
       "awarded_by": "The University of Sheffield",
-      "reason": "having the best Software Hut project out of the teams working for our client.",
+      "reason": "creating the best piece of software out of the groups assigned to our particular client in the 'Software Hut' module, where we had to create an application for a real world client.",
       "image": "s6"
     },
     {
       "name": "John Wiley & Sons Ltd. Prize for the Best Overall Performance at Level 1",
       "date_awarded": "2014",
       "awarded_by": "The University of Sheffield",
-      "reason": "being top of the year in 1st year.",
+      "reason": "being ranked top of the year in 1st year.",
       "image": "wiley"
     },
     {
@@ -199,7 +199,7 @@
       "name": "Global Engineering Challenge: Best Overall Solution",
       "date_awarded": "2014",
       "awarded_by": "The University of Sheffield",
-      "reason": "having the best project proposal in our hub.",
+      "reason": "having the best project proposal in our hub at the end of the Global Engineering Challenge.",
       "image": "gec"
     }
   ],
