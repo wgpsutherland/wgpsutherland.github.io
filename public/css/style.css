@@ -179,16 +179,16 @@ body, html, .page {
     opacity: 0;
 }
 
-.award-outer-wrapper:hover .award-tile-text{
+.award-outer-wrapper:hover .award-tile-text {
     opacity: 1;
 }
 
-.award-outer-wrapper:hover .award-inner-wrapper{
+.award-outer-wrapper:hover .award-inner-wrapper {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.award-outer-wrapper:hover .award-img{
-    opacity: 0.2;
+.award-outer-wrapper:hover .award-img {
+    opacity: 0;
 }
 
 .award-img {
@@ -196,10 +196,10 @@ body, html, .page {
     max-height: 85%;
     max-width: 85%;
     top: 15px;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* ===================== EDUCATION VIEW ===================== */
