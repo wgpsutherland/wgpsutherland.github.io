@@ -8,7 +8,7 @@ define([
 
     return Backbone.View.extend({
 
-        className: "awards full-height-view",
+        className: "awards full-height-view home-view",
 
         template: _.template(AwardsTemplate),
 

@@ -7,7 +7,7 @@ define([
 
     return Backbone.View.extend({
 
-        className: "employment full-height-view",
+        className: "employment full-height-view home-view",
 
         template: _.template(EmploymentTemplate),
 
