@@ -165,12 +165,10 @@ body, html, .page {
 .award-inner-wrapper {
     padding: 10px;
     background-color: #FEF3FF;
-
 }
 
 .award-tile-text {
     position: relative;
-    /*background-color: red;*/
     z-index: 1;
     height: 100%;
     color: white;
@@ -195,7 +193,10 @@ body, html, .page {
 .award-img {
     position: absolute;
     margin: auto;
-    top: 0; left: 0; bottom: 0; right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     max-height: 85%;
     max-width: 85%;
 }

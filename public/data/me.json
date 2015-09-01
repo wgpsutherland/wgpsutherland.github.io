@@ -155,51 +155,51 @@
   "awards": [
     {
       "name": "The British Computer Society Eliot Chat Prize for the Best Overall Performance at Level 2",
-      "date_awarded": "6/7/2015",
+      "date_awarded": "2015",
       "awarded_by": "The University of Sheffield",
-      "reason": "Awarded for being top of the year in 2nd year.",
+      "reason": "being top of the year in 2nd year.",
       "image": "bcs"
     },
     {
-      "name": "John Wiley & Sons Ltd. Prize for the Best Overall Performance at Level 1",
-      "date_awarded": "6/7/2014",
-      "awarded_by": "The University of Sheffield",
-      "reason": "Awarded for being top of the year in 1st year.",
-      "image": "wiley"
-    },
-    {
       "name": "IBM Software Hut Prize",
-      "date_awarded": "6/6/2015",
+      "date_awarded": "2015",
       "awarded_by": "The University of Sheffield",
-      "reason": "Awarded for having the best Software Hut project in the year.",
+      "reason": "having the best Software Hut project in the year.",
       "image": "ibm"
     },
     {
       "name": "Client Software Hut Prize",
-      "date_awarded": "6/6/2015",
+      "date_awarded": "2015",
       "awarded_by": "The University of Sheffield",
-      "reason": "Awarded for having the best Software Hut project out of the teams working for our client.",
+      "reason": "having the best Software Hut project out of the teams working for our client.",
       "image": "s6"
     },
     {
+      "name": "John Wiley & Sons Ltd. Prize for the Best Overall Performance at Level 1",
+      "date_awarded": "2014",
+      "awarded_by": "The University of Sheffield",
+      "reason": "being top of the year in 1st year.",
+      "image": "wiley"
+    },
+    {
       "name": "recognised@HP Commendation",
-      "date_awarded": "6/8/2014",
+      "date_awarded": "2014",
       "awarded_by": "Sean Blanchflower, Head of R&D at HP Autonomy",
-      "reason": "Awarded for creating the HP IDOL Query Visualiser, Orbit.",
+      "reason": "creating the HP IDOL Query Visualiser, Orbit.",
       "image": "hp"
     },
     {
       "name": "epiGenesys Scholarship for Outstanding Academic Achievement",
-      "date_awarded": "6/7/2014",
+      "date_awarded": "2014",
       "awarded_by": "The University of Sheffield",
-      "reason": "Awarded for being top of the year after January exams in 1st year.",
+      "reason": "being top of the year after January exams in 1st year.",
       "image": "epigen"
     },
     {
       "name": "Global Engineering Challenge: Best Overall Solution",
-      "date_awarded": "6/7/2014",
+      "date_awarded": "2014",
       "awarded_by": "The University of Sheffield",
-      "reason": "Awarded for having the best project proposal in our hub.",
+      "reason": "having the best project proposal in our hub.",
       "image": "gec"
     }
   ],

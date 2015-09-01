@@ -14,8 +14,10 @@
         <div class="col-sm-4 award-outer-wrapper">
             <div class="award-inner-wrapper">
                 <div class="award-tile-text">
-                    <p><strong><%= award.get('name') %></strong></p>
-                    <p><%= award.get('reason') %></p>
+                    <p class="award-tile-name"><strong><%= award.get('name') %>  (<%= award.get('date_awarded') %>)</strong></p>
+                    <hr>
+                    <p>Awarded for <%= award.get('reason') %></p>
+                    <p>Awarded by <%= award.get('awarded_by') %>.</p>
                 </div>
             </div>
             <img src="public/images/<%= award.get('image') %>.png" alt="<%= award.get('image') %> logo" class="award-img">
