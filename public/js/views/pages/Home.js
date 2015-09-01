@@ -13,7 +13,7 @@ define([
 
     return Backbone.View.extend({
 
-        className: "full-height-view",
+        className: "full-height-view home-page",
 
         template: _.template(HomeTemplate),
 
