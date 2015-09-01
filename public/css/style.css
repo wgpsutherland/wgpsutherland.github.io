@@ -193,13 +193,10 @@ body, html, .page {
 
 .award-img {
     position: absolute;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
     max-height: 85%;
     max-width: 85%;
-    top: 15px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* ===================== EDUCATION VIEW ===================== */

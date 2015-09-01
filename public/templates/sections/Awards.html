@@ -10,6 +10,7 @@
             <div class="row award-row">
         <% } %>
 
+        <!-- award tile -->
         <div class="col-xs-4 award-outer-wrapper">
             <div class="award-inner-wrapper">
                 <div class="award-tile-text">
@@ -17,7 +18,7 @@
                     <p><%= award.get('reason') %></p>
                 </div>
             </div>
-            <img src="public/images/<%= award.get('image') %>.png" alt="a logo" class="award-img">
+            <img src="public/images/<%= award.get('image') %>.png" alt="<%= award.get('image') %> logo" class="award-img">
         </div>
 
         <% if((i + 1) % 3 === 0 || i === awardsCollection.length - 1) { %>
