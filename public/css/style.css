@@ -149,15 +149,12 @@ body, html, .page {
     color: #A28FAD;
 }
 
-.award-row {
-    height: 200px;
-}
-
 .award-outer-wrapper {
+    height: 200px;
     padding: 5px;
 }
 
-.award-outer-wrapper, .award-inner-wrapper {
+.award-inner-wrapper {
     height: 100%;
 }
 
