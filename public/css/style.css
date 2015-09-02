@@ -164,6 +164,10 @@ body, html, .page {
     color: #A28FAD;
 }
 
+.award-tile-wrapper {
+    padding: 100px 0;
+}
+
 .award-outer-wrapper {
     height: 200px;
     padding: 5px;
