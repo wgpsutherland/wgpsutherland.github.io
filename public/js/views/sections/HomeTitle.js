@@ -48,8 +48,9 @@ define([
                 this.addWithTimeout(".title-letter-" + i, letter, this.speed);
             }, this);
 
-            // move the caret down a line (toggle visibility)
-            this.toggleWithTimeout('.type-caret', 'clear', this.speed);
+            // visually move the caret down a line
+            this.removeWithTimeout('.home-title-name-type-caret', 0);
+            this.toggleWithTimeout('.links-type-caret', 'clear', this.speed);
 
             // type out the links
             _.each(this.homeLinks, function (link, i) {
@@ -80,6 +81,12 @@ define([
         toggleWithTimeout: function(target, className, increment) {
             setTimeout(_.bind(function () {
                 this.$(target).toggleClass(className);
+            }, this), this.time += increment);
+        },
+
+        removeWithTimeout: function(target, increment) {
+            setTimeout(_.bind(function() {
+                this.$(target).remove();
             }, this), this.time += increment);
         }
     });
