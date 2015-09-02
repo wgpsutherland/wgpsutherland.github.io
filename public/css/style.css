@@ -17,6 +17,7 @@ body, html, .page {
     padding: 0;
     margin: 0;
     font-family: 'open sans', sans-serif;
+    font-weight: 400;
 }
 
 .row {
@@ -143,6 +144,7 @@ body, html, .page {
 
 .me p {
     text-align: center;
+    font-size: 1.3em;
 }
 
 .me-view-social-wrapper {
