@@ -22,7 +22,8 @@ define([
             var model = this.infoModel;
             var template = this.template({
                 description: model.get('description'),
-                media: model.get('social_media')
+                media: model.get('social_media'),
+                email: model.get('email')
             });
             this.$el.html(template);
         }

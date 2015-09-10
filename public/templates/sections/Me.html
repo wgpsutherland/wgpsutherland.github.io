@@ -1,42 +1,45 @@
-<div class="container">
-
-    <h1 class="view-header">ABOUT</h1>
-
-    <!-- picture -->
-    <div class="me-view-img-container">
-        <img src="public/images/me.png" alt="a photo of Will Sutherland" class="img-circle me-view-img">
-    </div>
-
-    <!-- social media -->
-    <div class="row me-view-social-wrapper">
-        <div class="col-sm-4"></div>
-
-        <div class="col-sm-4">
-            <% _.each(media, function(item) { %>
-                <div class="col-xs-3">
-                    <a href="<%= item.link %>">
-                <span class="fa fa-<%= item.icon %>">
-
-                </span>
-                    </a>
-                </div>
-            <% }); %>
-        </div>
-
-        <div class="col-sm-4"></div>
-    </div>
-
-    <!-- text bio -->
+<div class="container me-view-contents">
     <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
 
-            <!-- bio -->
-            <% _.each(description, function(line, i) { %>
-                <hr>
-                <p><%= line %></p>
-            <% }); %>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-1">&nbsp;</div>
+                <div class="col-md-10">
+                    <h2>Hi</h2>
+                    <hr>
+                    <!-- bio -->
+                    <% _.each(description, function(line, i) { %>
+                    <p><%= line %></p>
+                    <% }); %>
+                </div>
+                <div class="col-md-1">&nbsp;</div>
+            </div>
         </div>
-        <div class="col-md-2"></div>
+
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-1">&nbsp;</div>
+                <div class="col-md-10">
+                    <!-- social media -->
+                    <div class="row me-view-social-wrapper">
+
+                        <h2>Get in touch</h2>
+                        <hr>
+                        <p><%= email %></p>
+                        <hr>
+
+                        <% _.each(media, function(item) { %>
+                        <div class="col-xs-3">
+                            <a href="<%= item.link %>">
+                                <span class="fa fa-<%= item.icon %>"></span>
+                            </a>
+                        </div>
+                        <% }); %>
+
+                    </div>
+                </div>
+                <div class="col-md-1">&nbsp;</div>
+            </div>
+        </div>
     </div>
 </div>
