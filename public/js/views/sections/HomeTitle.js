@@ -78,20 +78,20 @@ define([
             }, this);
         },
 
-        addWithTimeout: function(target, item, increment) {
+        addWithTimeout: function (target, item, increment) {
             setTimeout(_.bind(function () {
                 this.$(target).html(item);
-            },this), this.time += increment);
+            }, this), this.time += increment);
         },
 
-        toggleWithTimeout: function(target, className, increment) {
+        toggleWithTimeout: function (target, className, increment) {
             setTimeout(_.bind(function () {
                 this.$(target).toggleClass(className);
             }, this), this.time += increment);
         },
 
-        removeWithTimeout: function(target, increment) {
-            setTimeout(_.bind(function() {
+        removeWithTimeout: function (target, increment) {
+            setTimeout(_.bind(function () {
                 this.$(target).remove();
             }, this), this.time += increment);
         }

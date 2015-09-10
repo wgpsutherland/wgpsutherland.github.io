@@ -12,6 +12,10 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    background-color: black;
+}
+
 body, html, .page {
     height: 100%;
     padding: 0;
@@ -39,6 +43,7 @@ body, html, .page {
 
 .home-page {
     height: 100%;
+    -webkit-backface-visibility: hidden; /* prevents transitions of child elements causing flickering in others */
 }
 
 /* =====================  ABOUT PAGE ===================== */
@@ -78,6 +83,17 @@ body, html, .page {
     width: 100%;
     min-height: 100%;
     z-index: -10;
+    opacity: 1;
+
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.darken {
+    opacity: 0.3;
+
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
 }
 
 /* ===================== TITLE VIEW ===================== */
@@ -85,7 +101,6 @@ body, html, .page {
 .title-view {
     font-family: monospace;
     color: black;
-    text-shadow: 0 0 1px white;
 }
 
 .home-title-name {
@@ -140,7 +155,7 @@ body, html, .page {
 }
 
 .me {
-    background-color: rgba(255, 255, 255, 0.6);
+    color: white;
 }
 
 .me p {
@@ -151,10 +166,12 @@ body, html, .page {
 .me-view-social-wrapper a {
     font-size: 3em;
     text-align: center;
+    color: #82BCEF;
 }
 
 .me-view-social-wrapper a:hover {
     text-decoration: none;
+    color: #4f5c82;
 }
 
 .me-view-social-wrapper span {
