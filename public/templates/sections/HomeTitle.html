@@ -16,14 +16,14 @@
             <!-- empty list and link shells -->
             <% _.each(links, function(link, i) {
             %><li class="li-<%=link%>">
-                <a class="link link-<%=link%>" href="#/<%=link%>">
+                <div class="link link-<%=link%>">
 
                     <!-- empty span for each letter in the link name -->
                     <% _.each(link.split(''), function(letter, j) {
                     %><span class="links-letter-<%= j %>"></span><%
                     }); %>
 
-                </a>
+                </div>
 
             <!-- add empty spans for ' // ' insertion -->
             </li><% if(i !== links.length - 1) {
