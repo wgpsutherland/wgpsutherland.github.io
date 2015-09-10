@@ -14,6 +14,7 @@ html {
 
 body {
     background-color: black;
+    overflow-x: hidden;
 }
 
 body, html, .page {
@@ -147,6 +148,24 @@ body, html, .page {
 
 .me-view-contents {
     margin-top: 100px;
+}
+
+.me-view-contact {
+    opacity: 0;
+    transform: translate(200px, 0px);
+}
+
+.me-view-description {
+    opacity: 0;
+    transform: translate(-200px, 0px);
+}
+
+.appear {
+    opacity: 1;
+    transform: translate(0px, 0px);
+
+    -webkit-transition: opacity 1s, transform 1s;
+    transition: opacity 1s, transform 1s;
 }
 
 .me hr {

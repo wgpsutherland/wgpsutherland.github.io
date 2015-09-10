@@ -26,6 +26,33 @@ define([
                 email: model.get('email')
             });
             this.$el.html(template);
+            this.scrollListen();
+        },
+
+        scrollListen: function() {
+
+            var didScroll = false;
+
+            var appearPoint;
+            _.defer(function () {
+                var height = $(window).outerHeight() / 4;
+                appearPoint = this.$('.me').offset().top - (3 * height);
+            });
+
+            $(window).scroll(function () {
+                didScroll = true;
+            });
+
+            setInterval(function () {
+                if (didScroll) {
+                    didScroll = false;
+                    var windowTop = $(window).scrollTop();
+                    if (windowTop >= appearPoint) {
+                        this.$('.me-view-contact').addClass('appear');
+                        this.$('.me-view-description').addClass('appear');
+                    }
+                }
+            }, 250);
         }
     });
 });
