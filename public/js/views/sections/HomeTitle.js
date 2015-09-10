@@ -29,7 +29,7 @@ define([
 
         homeLinks: ['projects'],
 
-        time: 0,
+        time: 300,
 
         // time between each letter being printed
         speed: 100,
