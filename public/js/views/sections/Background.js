@@ -25,7 +25,7 @@ define([
                 var bg = this.$('.background');
                 var height = bg.outerHeight() / 4;
                 firstChangePoint = bg.offset().top + height;
-                secondChangePoint = this.$('.awards').offset().top - (2 * height);
+                secondChangePoint = this.$('.awards').offset().top - (3 * height);
             });
 
             $(window).scroll(function () {
