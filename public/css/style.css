@@ -220,19 +220,19 @@ body, html, .page {
 /* ===================== EDUCATION VIEW ===================== */
 
 .education {
-    background-color: #F4F9F9;
+    background-color: rgba(206, 206, 255, 0.6);
 }
 
 /* ===================== EMPLOYMENT VIEW ===================== */
 
 .employment {
-    background-color: #ECFFF1;
+    background-color: rgba(195, 255, 227, 0.6);
 }
 
 /* ===================== SKILLS VIEW ===================== */
 
 .skills {
-    background-color: #F4F9F9;
+    background-color: rgba(255, 242, 209, 0.6);
 }
 
 /* ======================================== NAVS ========================================= */
