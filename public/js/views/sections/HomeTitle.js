@@ -2,8 +2,9 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'text!templates/sections/HomeTitle.html'
-], function ($, _, Backbone, HomeTitleTemplate) {
+    'text!templates/sections/HomeTitle.html',
+    'views/sections/Nav'
+], function ($, _, Backbone, HomeTitleTemplate, Nav) {
 
     return Backbone.View.extend({
 
@@ -13,6 +14,7 @@ define([
 
         initialize: function () {
             console.log('Home title view initialising');
+            this.nav = new Nav();
         },
 
         render: function () {
@@ -21,6 +23,10 @@ define([
                 links: this.homeLinks
             });
             this.$el.html(template);
+
+            this.nav.render();
+            this.$el.append(this.nav.$el);
+
             this.verticallyAlign();
             this.type();
         },

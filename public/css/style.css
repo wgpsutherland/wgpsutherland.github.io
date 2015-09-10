@@ -255,20 +255,25 @@ body, html, .page {
 
 /* ===================== NAV ======================= */
 
-.large-nav {
-    background-color: white;
-}
-
-.nav-link {
-    text-align: center;
+.nav-container {
+    font-family: 'open sans', sans-serif;
+    font-weight: 300;
+    color: white;
+    text-shadow: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 50px;
     width: 100%;
-    margin: 0;
-    padding: 10px 0;
-    border-bottom: 2px solid transparent;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    padding-top: 15px;
+    text-align: center;
+    z-index: 30;
 }
 
-.nav-link:hover {
-    border-bottom: 2px solid black;
+.fixed-nav {
+    position: fixed;
+    top: 0;
 }
 
 /* ======================================== ANIMATIONS ================================ */
