@@ -152,19 +152,26 @@ body, html, .page {
 
 .me-view-contact {
     opacity: 0;
+    -ms-transform: translate(200px, 0px);
+    -webkit-transform: translate(200px, 0px);
     transform: translate(200px, 0px);
 }
 
 .me-view-description {
     opacity: 0;
+
+    -webkit-transform: translate(-200px, 0px);
+    -ms-transform: translate(-200px, 0px);
     transform: translate(-200px, 0px);
 }
 
 .appear {
     opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
     transform: translate(0px, 0px);
 
-    -webkit-transition: opacity 1s, transform 1s;
+    -webkit-transition: opacity 1s, -webkit-transform 1s;
     transition: opacity 1s, transform 1s;
 }
 
