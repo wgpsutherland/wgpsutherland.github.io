@@ -132,7 +132,7 @@ body, html, .page {
 /* ===================== ME VIEW ==================== */
 
 .me-view-contents {
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .me hr {
@@ -165,16 +165,12 @@ body, html, .page {
 /* ===================== AWARDS VIEW ===================== */
 
 .awards {
-    background-color: #2A2D47;
+    background-color: rgba(207, 236, 255, 0.6);
     color: black;
 }
 
 .awards h1 {
-    color: #A28FAD;
-}
-
-.award-tile-wrapper {
-    padding: 100px 0;
+    color: #695d74;
 }
 
 .award-outer-wrapper {
@@ -188,14 +184,14 @@ body, html, .page {
 
 .award-inner-wrapper {
     padding: 10px;
-    background-color: #FEF3FF;
+    background-color: white;
 }
 
 .award-tile-text {
     position: relative;
     z-index: 1;
     height: 100%;
-    color: white;
+    color: black;
 }
 
 .award-inner-wrapper .award-tile-text {
@@ -204,10 +200,6 @@ body, html, .page {
 
 .award-outer-wrapper:hover .award-tile-text {
     opacity: 1;
-}
-
-.award-outer-wrapper:hover .award-inner-wrapper {
-    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .award-outer-wrapper:hover .award-img {
