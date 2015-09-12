@@ -4,6 +4,7 @@ html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+
 }
 
 *, *:before, *:after {
@@ -14,7 +15,7 @@ html {
 
 body {
     background-color: white;
-    overflow-x: hidden;
+
 }
 
 body, html, .page {
@@ -139,6 +140,7 @@ body, html, .page {
 
 .me-view-contents {
     margin-top: 100px;
+    overflow-x: hidden;
 }
 
 .me-view-contact {
