@@ -8,10 +8,8 @@ define([
     'views/sections/Awards',
     'views/sections/Education',
     'views/sections/Employment',
-    'views/sections/Skills',
-    'views/sections/Background'
-], function ($, _, Backbone, HomeTemplate, HomeTitleView, MeView, AwardsView, EducationView, EmploymentView, SkillsView,
-             Background) {
+    'views/sections/Skills'
+], function ($, _, Backbone, HomeTemplate, HomeTitleView, MeView, AwardsView, EducationView, EmploymentView, SkillsView) {
 
     return Backbone.View.extend({
 
@@ -20,7 +18,6 @@ define([
         template: _.template(HomeTemplate),
 
         contentViews: {
-            background: new Background(),
             homeTitle: new HomeTitleView(),
             me: new MeView(),
             awards: new AwardsView(),
@@ -39,7 +36,7 @@ define([
             this.$el.html(this.template);
 
             // render and add views to the DOM
-            _.each(this.contentViews, function(view) {
+            _.each(this.contentViews, function (view) {
                 view.render();
                 this.$el.append(view.$el);
             }, this);

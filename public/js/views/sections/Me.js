@@ -33,10 +33,13 @@ define([
 
             var didScroll = false;
 
-            var appearPoint;
+            var appearPoint, disappearPoint;
             _.defer(function () {
-                var height = $(window).outerHeight() / 4;
-                appearPoint = this.$('.me').offset().top - (3 * height);
+                var windowHeight = $(window).outerHeight();
+                var element = this.$('.me-view-contents-inner');
+                var elementTop = element.offset().top;
+                appearPoint = elementTop - windowHeight;
+                disappearPoint = elementTop + element.outerHeight();
             });
 
             $(window).scroll(function () {
@@ -47,9 +50,12 @@ define([
                 if (didScroll) {
                     didScroll = false;
                     var windowTop = $(window).scrollTop();
-                    if (windowTop >= appearPoint) {
+                    if (windowTop >= appearPoint && windowTop <= disappearPoint) {
+                        this.$('body').addClass('darken');
                         this.$('.me-view-contact').addClass('appear');
                         this.$('.me-view-description').addClass('appear');
+                    } else {
+                        this.$('body').removeClass('darken');
                     }
                 }
             }, 250);
