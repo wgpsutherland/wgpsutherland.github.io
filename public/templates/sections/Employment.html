@@ -1,3 +1,26 @@
 <div class="container">
     <h1 class="view-header">EMPLOYMENT</h1>
+
+    <% employmentsCollection.each(function(job, i) { %>
+
+    <div class="row job-wrapper-outer">
+        <div class="col-md-2 job-img-wrapper">
+            <img src="public/images/<%= job.get('image') %>.png" alt="<%= job.get('image') %> logo" class="job-img">
+        </div>
+        <div class="col-md-10">
+            <h2>
+                <%= job.get('company') %>
+                <small>
+                    <%= job.get('sub-company') %>
+                </small>
+            </h2>
+            <p><strong>Role: </strong><%= job.get('role') %></p>
+            <p><strong>Location: </strong><%= job.get('location') %></p>
+            <p><strong>When: </strong><%= job.get('start') %> - <%= job.get('end') %></p>
+            <p><strong>What I did: </strong><%= job.get('description') %></p>
+        </div>
+    </div>
+
+    <% }); %>
+
 </div>

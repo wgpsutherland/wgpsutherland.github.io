@@ -204,21 +204,25 @@
   ],
   "employment": [
     {
-      "company": "HP Autonomy",
+      "company": "Hewlett-Packard",
+      "sub-company": "HP Autonomy",
       "location": "Cambridge, UK",
-      "start": "29/7/2015",
-      "end": "4/9/2015",
+      "start": "July 2015",
+      "end": "September 2015",
       "role": "Intern",
+      "image": "hp",
       "description": [
         "Created a visualiser to aid research into scaling server systems based on demand. Created a data collector to listen to server load data from HP’s Haven On Demand platform and display it in a real-time graphing system. Both using Node.js."
       ]
     },
     {
-      "company": "HP Autonomy",
+      "company": "Hewlett-Packard",
+      "sub-company": "HP Autonomy",
       "location": "Cambridge, UK",
-      "start": "29/7/2014",
-      "end": "4/9/2014",
+      "start": "July 2014",
+      "end": "September 2014",
       "role": "Intern",
+      "image": "hp",
       "description": [
         "Created an interactive visualiser in JavaScript to illustrate the search capabilities of HP’s Big Data products, which was well received by the Executive Vice President of HP Software. Created a RESTful API to act as an update tracker for HP IDOL servers using Node.js and MySQL, with an accompanying Content Management System."
       ]

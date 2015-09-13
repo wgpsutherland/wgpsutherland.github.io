@@ -199,12 +199,12 @@ body, html, .page {
 /* ===================== AWARDS VIEW ===================== */
 
 .awards {
-    background-color: rgba(207, 236, 255, 0.6);
+    background-color: #059CFF;
     color: black;
 }
 
 .awards h1 {
-    color: #695d74;
+    color: white;
 }
 
 .award-outer-wrapper {
@@ -214,6 +214,7 @@ body, html, .page {
 
 .award-inner-wrapper {
     height: 100%;
+    /*border: 3px solid black;*/
 }
 
 .award-inner-wrapper {
@@ -254,13 +255,37 @@ body, html, .page {
 /* ===================== EDUCATION VIEW ===================== */
 
 .education {
-    background-color: rgba(206, 206, 255, 0.6);
+    background-color: white;
 }
 
 /* ===================== EMPLOYMENT VIEW ===================== */
 
 .employment {
-    background-color: rgba(195, 255, 227, 0.6);
+    background-color: #FD53C4;
+}
+
+.employment h1 {
+    color: white;
+}
+
+.job-wrapper-outer {
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+.job-img-wrapper {
+    height: 100%;
+    min-height: 120px;
+}
+
+.job-img {
+    position: absolute;
+    margin: auto;
+    margin-top: 20px;
+    left: 0;
+    right: 0;
+    max-height: 100px;
+    max-width: 100px;
 }
 
 /* ===================== SKILLS VIEW ===================== */
