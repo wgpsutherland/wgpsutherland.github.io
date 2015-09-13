@@ -2,8 +2,9 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'text!templates/sections/Employment.html'
-], function ($, _, Backbone, EmploymentTemplate) {
+    'text!templates/sections/Employment.html',
+    '../../collections/Employments'
+], function ($, _, Backbone, EmploymentTemplate, EmploymentsCollection) {
 
     return Backbone.View.extend({
 
@@ -13,10 +14,15 @@ define([
 
         initialize: function () {
             console.log('Employment view initialising');
+            this.employmentsCollection = new EmploymentsCollection();
+            this.listenTo(this.employmentsCollection, 'add', this.render);
         },
 
         render: function () {
-            this.$el.html(this.template);
+            var template = this.template({
+                employmentsCollection: this.employmentsCollection
+            });
+            this.$el.html(template);
         }
     });
 });

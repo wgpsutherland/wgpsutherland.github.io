@@ -209,7 +209,9 @@
       "start": "29/7/2015",
       "end": "4/9/2015",
       "role": "Intern",
-      "description": "..."
+      "description": [
+        "Created a visualiser to aid research into scaling server systems based on demand. Created a data collector to listen to server load data from HP’s Haven On Demand platform and display it in a real-time graphing system. Both using Node.js."
+      ]
     },
     {
       "company": "HP Autonomy",
@@ -218,9 +220,7 @@
       "end": "4/9/2014",
       "role": "Intern",
       "description": [
-        "Created Orbit, an interactive query visualiser designed to illustrate advanced search techniques within HP's Big Data product suite, using the D3.js graphics library.",
-        "Orbit was demoed to and well received by the executive vice president of HP Software.",
-        "Created a RESTful API to act as an update tracker for HP IDOL servers using Node.js and MySQL, along with a companion CMS built with the frontend JavaScript framework Backbone.js."
+        "Created an interactive visualiser in JavaScript to illustrate the search capabilities of HP’s Big Data products, which was well received by the Executive Vice President of HP Software. Created a RESTful API to act as an update tracker for HP IDOL servers using Node.js and MySQL, with an accompanying Content Management System."
       ]
     }
   ],
