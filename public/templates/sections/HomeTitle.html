@@ -15,15 +15,15 @@
 
             <!-- empty list and link shells -->
             <% _.each(links, function(link, i) {
-            %><li class="li-<%=link%>">
-                <div class="link link-<%=link%>">
+            %><li class="li-<%=link.name%>">
+                <a class="link link-<%= link.name %>" href="<%= link.link %>">
 
                     <!-- empty span for each letter in the link name -->
-                    <% _.each(link.split(''), function(letter, j) {
+                    <% _.each(link.name.split(''), function(letter, j) {
                     %><span class="links-letter-<%= j %>"></span><%
                     }); %>
 
-                </div>
+                </a>
 
             <!-- add empty spans for ' // ' insertion -->
             </li><% if(i !== links.length - 1) {

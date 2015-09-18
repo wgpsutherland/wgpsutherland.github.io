@@ -28,7 +28,16 @@ define([
 
         name: 'Will Sutherland',
 
-        homeLinks: ['developer', 'student'],
+        homeLinks: [
+            {
+                name: 'resume',
+                link: './public/data/cv.pdf'
+            },
+            {
+                name: 'projects',
+                link: '#/projects'
+            }
+        ],
 
         time: 300,
 
@@ -55,8 +64,8 @@ define([
 
             // type out the links
             _.each(this.homeLinks, function (link, i) {
-                _.each(link.split(''), function (letter, j) {
-                    this.addWithTimeout(".link-" + link + " > .links-letter-" + j, letter, this.speed);
+                _.each(link.name.split(''), function (letter, j) {
+                    this.addWithTimeout(".link-" + link.name + " > .links-letter-" + j, letter, this.speed);
                 }, this);
                 if (i !== this.homeLinks.length - 1) this.addSlashes(i); // if not the last
             }, this);
