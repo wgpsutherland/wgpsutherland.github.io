@@ -35,7 +35,7 @@ define([
             },
             {
                 name: 'projects',
-                link: '#/projects'
+                link: '#/projects/all'
             }
         ],
 

@@ -11,7 +11,7 @@ define([
     var Router = Backbone.Router.extend({
         routes: {
             '': 'home',
-            'projects': 'projects'
+            'projects/:id': 'projects'
         }
     });
 
@@ -26,6 +26,7 @@ define([
 
             var homePage = new HomePage();
             var projectsPage = new ProjectsPage({
+                router: router,
                 projectsCollection: projectsCollection,
                 infoModel: infoModel
             });

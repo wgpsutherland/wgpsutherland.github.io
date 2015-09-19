@@ -13,13 +13,20 @@ define([
 
         initialize: function () {
             console.log('ProjectGrid view initialising');
-
             this.listenTo(this.collection, 'add remove change', this.render);
         },
 
-        render: function () {
+        render: function (id) {
+
+            // if the function is called with a filtering id instead of from the event listener
+            // if called from the listener then the type is 'object' and we don't want to change this.filter
+            if (typeof id === 'string') this.filter = id;
+
             var template = this.template({
-                collection: this.collection
+                collection: this.collection.filter(_.bind(function (model) {
+                    var tech = model.get('tech');
+                    return this.filter === 'all' || _.contains(tech, this.filter);
+                }, this))
             });
             this.$el.html(template);
         }

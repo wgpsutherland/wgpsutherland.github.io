@@ -1,5 +1,10 @@
 <div class="nav-container-fixed">
+    <a href="#/projects/all">
+        <p>All</p>
+    </a>
     <% _.each(tech, function(name) { %>
-        <p><%= name %></p>
+        <a href="#/projects/<%= name %>">
+            <p><%= name %></p>
+        </a>
     <% }); %>
 </div>

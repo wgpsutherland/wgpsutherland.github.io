@@ -17,17 +17,22 @@ define([
 
             console.log('Projects page initialising');
 
+            this.router = options.router;
+
             this.projectsCollection = options.projectsCollection;
             this.infoModel = options.infoModel;
 
             this.sidebar = new Sidebar({
                 model: this.infoModel
             });
+
             this.projectGridView = new ProjectGridView({
                 collection: this.projectsCollection
             });
 
-            //this.listenTo(this.projectsCollection, 'add', this.render);
+            this.router.on('route:projects', _.bind(function(id) {
+                this.projectGridView.render(id);
+            }, this));
         },
 
         render: function () {
@@ -35,7 +40,6 @@ define([
             this.$el.html(this.template);
 
             this.sidebar.render();
-            this.projectGridView.render();
 
             this.$el.prepend(this.sidebar.$el);
             this.$('.content-container').append(this.projectGridView.$el);
