@@ -13,10 +13,14 @@ define([
 
         initialize: function () {
             console.log('Sidebar view initialising');
+            this.listenTo(this.model, 'change', this.render);
         },
 
         render: function () {
-            this.$el.html(this.template);
+            var template = this.template({
+                tech: this.model.get('tech')
+            });
+            this.$el.html(template);
         }
     });
 });

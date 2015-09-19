@@ -18,8 +18,11 @@ define([
             console.log('Projects page initialising');
 
             this.projectsCollection = options.projectsCollection;
+            this.infoModel = options.infoModel;
 
-            this.sidebar = new Sidebar();
+            this.sidebar = new Sidebar({
+                model: this.infoModel
+            });
             this.projectGridView = new ProjectGridView({
                 collection: this.projectsCollection
             });
