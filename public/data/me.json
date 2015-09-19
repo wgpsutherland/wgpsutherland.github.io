@@ -30,6 +30,27 @@
         "link": "https://uk.linkedin.com/pub/will-sutherland/102/a65/167",
         "icon": "linkedin-square"
       }
+    ],
+    "tech": [
+      "Ruby on Rails",
+      "JavaScript",
+      "CSS3",
+      "HTML5",
+      "Backbone.js",
+      "Jekyll",
+      "Markdown",
+      "Node.js",
+      "PostgreSQL",
+      "D3.js",
+      "MySQL",
+      "MongoDB",
+      "RabbitMQ",
+      "Graphite",
+      "Python",
+      "PHP",
+      "Haskell",
+      "CoffeeScript",
+      "NPM"
     ]
   },
   "projects": [
