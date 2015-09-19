@@ -3,8 +3,9 @@ define([
     'underscore',
     'backbone',
     'views/pages/Home',
-    'views/pages/Projects'
-], function ($, _, Backbone, HomePage, ProjectsPage) {
+    'views/pages/Projects',
+    'collections/Projects'
+], function ($, _, Backbone, HomePage, ProjectsPage, ProjectsCollection) {
 
     var Router = Backbone.Router.extend({
         routes: {
@@ -19,8 +20,12 @@ define([
 
             var router = new Router();
 
+            var projectsCollection = new ProjectsCollection();
+
             var homePage = new HomePage();
-            var projectsPage = new ProjectsPage();
+            var projectsPage = new ProjectsPage({
+                projectsCollection: projectsCollection
+            });
 
             var pages = {
                 home: homePage,

@@ -1,1 +1,3 @@
-<p>this is the project grid </p>
+<% collection.each(function(project) { %>
+    <p><%= project.get('name') %></p>
+<% }); %>

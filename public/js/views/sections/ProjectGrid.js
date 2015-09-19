@@ -13,10 +13,15 @@ define([
 
         initialize: function () {
             console.log('ProjectGrid view initialising');
+
+            this.listenTo(this.collection, 'add remove change', this.render);
         },
 
         render: function () {
-            this.$el.html(this.template);
+            var template = this.template({
+                collection: this.collection
+            });
+            this.$el.html(template);
         }
     });
 });

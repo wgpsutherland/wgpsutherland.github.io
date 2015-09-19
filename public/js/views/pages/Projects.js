@@ -13,24 +13,29 @@ define([
 
         template: _.template(ProjectsTemplate),
 
-        views: {
-            sidebar: new Sidebar(),
-            content: new ProjectGridView()
-        },
+        initialize: function (options) {
 
-        initialize: function () {
             console.log('Projects page initialising');
+
+            this.projectsCollection = options.projectsCollection;
+
+            this.sidebar = new Sidebar();
+            this.projectGridView = new ProjectGridView({
+                collection: this.projectsCollection
+            });
+
+            //this.listenTo(this.projectsCollection, 'add', this.render);
         },
 
         render: function () {
 
             this.$el.html(this.template);
 
-            this.views.sidebar.render();
-            this.views.content.render();
+            this.sidebar.render();
+            this.projectGridView.render();
 
-            this.$el.prepend(this.views.sidebar.$el);
-            this.$('.content-container').append(this.views.content.$el);
+            this.$el.prepend(this.sidebar.$el);
+            this.$('.content-container').append(this.projectGridView.$el);
         }
     });
 });
