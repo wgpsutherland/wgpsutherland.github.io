@@ -294,6 +294,24 @@ body, html, .page {
     background-color: rgba(255, 242, 209, 0.6);
 }
 
+/* ===================== PROJECTS VIEW =================== */
+
+.project-outer-wrapper {
+    padding: 0;
+    height: 300px;
+}
+
+.project-tile-background-img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.project-info {
+}
+
 /* ======================================== NAVS ========================================= */
 
 /* ===================== SIDEBAR ===================== */
