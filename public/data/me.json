@@ -51,6 +51,13 @@
       "Haskell",
       "CoffeeScript",
       "NPM"
+    ],
+    "project_types": [
+      "Personal",
+      "Hackathon",
+      "University",
+      "Internship",
+      "Client"
     ]
   },
   "projects": [
@@ -59,6 +66,8 @@
       "type": "client",
       "description": "A web application for business employees to evaluate solutions to challenges proposed by their employer. Created for the company sideways6 as part of the module 'Software Hut'. Our application was chosen to be the winner by the client, as well as being chosen as the best application in the year.",
       "tags": [
+        "University",
+        "Client",
         "Ruby on Rails",
         "JavaScript",
         "CSS3",
@@ -75,6 +84,7 @@
       "type": "personal",
       "description": "My portfolio site.",
       "tags": [
+        "Personal",
         "Backbone.js",
         "JavaScript",
         "CSS3",
@@ -89,6 +99,8 @@
       "type": "personal",
       "description": "My blog, written using Jekyll, the static site generator.",
       "tags": [
+        "Personal",
+
         "Jekyll",
         "Markdown",
         "CSS3",
@@ -103,6 +115,7 @@
       "type": "personal",
       "description": "A web application for students to store their grades and track their progress.",
       "tags": [
+        "Personal",
         "Node.js",
         "Backbone.js",
         "PostgreSQL",
@@ -119,6 +132,7 @@
       "type": "hackathon",
       "description": "Proactively manage the passenger flow at Transport Service Facilities in Greater Manchester.",
       "tags": [
+        "Hackathon",
         "Node.js",
         "Backbone.js",
         "JavaScript",
@@ -133,6 +147,7 @@
       "type": "internship",
       "description": "An interactive query visualiser designed to illustrate advanced search techniques within HP's Big Data product suite.",
       "tags": [
+        "Internship",
         "JavaScript",
         "CSS3",
         "HTML5",
@@ -145,6 +160,7 @@
       "type": "internship",
       "description": "A RESTful API that tracks updates for HP IDOL servers, along with a companion CMS.",
       "tags": [
+        "Internship",
         "Node.js",
         "Backbone.js",
         "MySQL",
@@ -158,6 +174,7 @@
       "type": "personal",
       "description": "Display a user's Instagram posts as a flowing grid.",
       "tags": [
+        "Personal",
         "JavaScript",
         "CSS3",
         "HTML5"

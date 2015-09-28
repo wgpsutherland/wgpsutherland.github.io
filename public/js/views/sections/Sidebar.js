@@ -18,7 +18,8 @@ define([
 
         render: function () {
             var template = this.template({
-                tech: this.model.get('tech')
+                tech: this.model.get('tech'),
+                types: this.model.get('project_types')
             });
             this.$el.html(template);
         }

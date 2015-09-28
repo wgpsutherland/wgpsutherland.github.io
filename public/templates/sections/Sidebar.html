@@ -2,6 +2,11 @@
     <a href="#/projects/all">
         <p>All</p>
     </a>
+    <% _.each(types, function(name) { %>
+    <a href="#/projects/<%= name %>">
+        <p><%= name %></p>
+    </a>
+    <% }); %>
     <% _.each(tech, function(name) { %>
         <a href="#/projects/<%= name %>">
             <p><%= name %></p>
