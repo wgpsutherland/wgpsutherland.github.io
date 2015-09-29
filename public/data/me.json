@@ -63,7 +63,6 @@
   "projects": [
     {
       "name": "SideRank",
-      "type": "client",
       "description": "A web application for business employees to evaluate solutions to challenges proposed by their employer. Created for the company sideways6 as part of the module 'Software Hut'. Our application was chosen to be the winner by the client, as well as being chosen as the best application in the year.",
       "tags": [
         "University",
@@ -82,7 +81,6 @@
     },
     {
       "name": "Portfolio",
-      "type": "personal",
       "description": "My portfolio site.",
       "tags": [
         "Personal",
@@ -98,7 +96,6 @@
     },
     {
       "name": "blog",
-      "type": "personal",
       "description": "My blog, written using Jekyll, the static site generator.",
       "tags": [
         "Personal",
@@ -115,7 +112,6 @@
     },
     {
       "name": "Gradients",
-      "type": "personal",
       "description": "A web application for students to store their grades and track their progress.",
       "tags": [
         "Personal",
@@ -133,7 +129,6 @@
     },
     {
       "name": "Cisco_IoE_Challenge",
-      "type": "hackathon",
       "description": "Proactively manage the passenger flow at Transport Service Facilities in Greater Manchester.",
       "tags": [
         "Hackathon",
@@ -149,7 +144,6 @@
     },
     {
       "name": "Orbit",
-      "type": "internship",
       "description": "An interactive query visualiser designed to illustrate advanced search techniques within HP's Big Data product suite.",
       "tags": [
         "Internship",
@@ -166,7 +160,6 @@
     },
     {
       "name": "Update_Tracker",
-      "type": "internship",
       "description": "A RESTful API that tracks updates for HP IDOL servers, along with a companion CMS.",
       "tags": [
         "Internship",
@@ -182,7 +175,6 @@
     },
     {
       "name": "Phloto",
-      "type": "personal",
       "description": "Display a user's Instagram posts as a flowing grid.",
       "tags": [
         "Personal",
