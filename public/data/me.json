@@ -81,7 +81,7 @@
       "images": []
     },
     {
-      "name": "willsuther.land",
+      "name": "Portfolio",
       "type": "personal",
       "description": "My portfolio site.",
       "tags": [
@@ -132,7 +132,7 @@
       "images": []
     },
     {
-      "name": "Cisco IoE Challenge",
+      "name": "Cisco_IoE_Challenge",
       "type": "hackathon",
       "description": "Proactively manage the passenger flow at Transport Service Facilities in Greater Manchester.",
       "tags": [
@@ -165,7 +165,7 @@
       ]
     },
     {
-      "name": "Update Tracker",
+      "name": "Update_Tracker",
       "type": "internship",
       "description": "A RESTful API that tracks updates for HP IDOL servers, along with a companion CMS.",
       "tags": [
@@ -177,7 +177,7 @@
         "CSS3",
         "HTML5"
       ],
-      "main_image": "public/images/projects/update tracker/main.png",
+      "main_image": "public/images/projects/update_tracker/main.png",
       "images": []
     },
     {

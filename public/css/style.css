@@ -307,26 +307,19 @@ body, html, .page {
 .project-outer-wrapper {
     padding: 0;
     height: 300px;
-}
-
-.project-tile-background-img {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    width: 100%;
-    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .project-tag {
     padding: 4px 8px;
     background-color: #797979;
     border-radius: 3px;
-    color: white;
     margin: 2px;
     display: inline-block;
 }
 
-.project-tag:hover, .project-tag:focus {
+.project-tag, .project-tag:hover, .project-tag:focus {
     color: white;
 }
 

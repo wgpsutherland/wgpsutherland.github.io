@@ -22,13 +22,24 @@ define([
             // if called from the listener then the type is 'object' and we don't want to change this.filter
             if (typeof id === 'string') this.filter = id;
 
+            var collection = this.collection.filter(_.bind(function (model) {
+                var tags = model.get('tags');
+                return this.filter === 'all' || _.contains(tags, this.filter);
+            }, this));
+
             var template = this.template({
-                collection: this.collection.filter(_.bind(function (model) {
-                    var tags = model.get('tags');
-                    return this.filter === 'all' || _.contains(tags, this.filter);
-                }, this))
+                collection: collection
             });
+
             this.$el.html(template);
+
+            // set the background images of each of the projects
+            _.each(collection, function (project) {
+                var url = "url(" + project.get('main_image') + ")";
+                this.$('.project-wrapper-' + project.get('name')).css({
+                    'background-image': url
+                });
+            }, this);
         }
     });
 });

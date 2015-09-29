@@ -1,6 +1,8 @@
 <% _.each(collection, function(project) { %>
-    <div class="col-xs-6 project-outer-wrapper">
-        <p class="project-info"><%= project.get('name') %></p>
-        <img src="<%= project.get('main_image') %>" alt="" class="project-tile-background-img">
+    <div class="col-lg-4 col-sm-6 project-outer-wrapper project-wrapper-<%= project.get('name') %>">
+        <p class="project-info">
+            <strong><%= project.get('name') %></strong>
+        </p>
+        <p><%= project.get('description') %></p>
     </div>
 <% }); %>
