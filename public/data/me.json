@@ -57,7 +57,8 @@
       "Hackathon",
       "University",
       "Internship",
-      "Client"
+      "Client",
+      "Contribution"
     ]
   },
   "projects": [
@@ -185,6 +186,34 @@
       "link": "http://wgpsutherland.github.io/phloto/",
       "code": "https://github.com/wgpsutherland/phloto",
       "main_image": "public/images/projects/phloto/main.png",
+      "images": []
+    },
+    {
+      "name": "Server_Scaler",
+      "description": "A Node.js system to interact with RabbitMQ and calculate and set the optimal number of online servers to maximise profit and minimise queue wait times. With an accompanying visualiser.",
+      "tags": [
+        "Internship",
+        "JavaScript",
+        "Node.js",
+        "D3.js",
+        "CSS3",
+        "HTML5",
+        "RabbitMQ"
+      ],
+      "main_image": "",
+      "images": []
+    },
+    {
+      "name": "Haven_on_Demand_Load_Gatherer",
+      "description": "A Node.js system to monitor load on HP's Haven on Demand servers and send data to the real time graphing service, Graphite.",
+      "tags": [
+        "Internship",
+        "JavaScript",
+        "Node.js",
+        "Graphite",
+        "RabbitMQ"
+      ],
+      "main_image": "",
       "images": []
     }
   ]
