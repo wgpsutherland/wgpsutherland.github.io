@@ -50,7 +50,8 @@
       "PHP",
       "Haskell",
       "CoffeeScript",
-      "NPM"
+      "NPM",
+      "ECMAScript 6"
     ],
     "project_types": [
       "Personal",
@@ -213,6 +214,76 @@
         "Graphite",
         "RabbitMQ"
       ],
+      "main_image": "",
+      "images": []
+    },
+    {
+      "name": "TinX",
+      "description": "T in X - a simple time constants library in CoffeeScript.",
+      "tags": [
+        "Personal",
+        "JavaScript",
+        "CoffeeScript",
+        "Node.js",
+        "NPM"
+      ],
+      "link": "https://www.npmjs.com/package/tinx",
+      "code": "https://github.com/wgpsutherland/tinx",
+      "main_image": "",
+      "images": []
+    },
+    {
+      "name": "Slack Connect 4 Bot",
+      "description": "A bot that allows you to play Connect 4 on Slack! Start a game in any channel or private group, and 2 people can play. Written to practice new features found in the new ECMAScript 6 JavaScript standard.",
+      "tags": [
+        "Personal",
+        "JavaScript",
+        "ECMAScript 6"
+      ],
+      "code": "https://github.com/wgpsutherland/slack-connect-4-bot",
+      "main_image": "",
+      "images": []
+    },
+    {
+      "name": "Doubly Linked List",
+      "description": "A JavaScript implementation of a doubly-linked list.",
+      "tags": [
+        "Personal",
+        "JavaScript",
+        "Node.js",
+        "NPM"
+      ],
+      "link": "https://www.npmjs.com/package/double-linked-list",
+      "code": "https://github.com/wgpsutherland/js-double-linked-list",
+      "main_image": "",
+      "images": []
+    },
+    {
+      "name": "Woodchopper",
+      "description": "Selective logging based on command line arguments and keys, written in CoffeeScript.",
+      "tags": [
+        "Personal",
+        "CoffeeScript",
+        "JavaScript",
+        "Node.js",
+        "NPM"
+      ],
+      "link": "https://www.npmjs.com/package/woodchopper",
+      "code": "https://github.com/wgpsutherland/woodchopper",
+      "main_image": "",
+      "images": []
+    },
+    {
+      "name": "Flagger",
+      "description": "Easily access all flags and arguments passed into node programs.",
+      "tags": [
+        "Personal",
+        "JavaScript",
+        "Node.js",
+        "NPM"
+      ],
+      "link": "https://www.npmjs.com/package/flagger",
+      "code": "https://github.com/wgpsutherland/flagger",
       "main_image": "",
       "images": []
     }
