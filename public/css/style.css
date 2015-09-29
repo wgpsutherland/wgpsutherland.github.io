@@ -296,6 +296,14 @@ body, html, .page {
 
 /* ===================== PROJECTS VIEW =================== */
 
+.tag-wrapper {
+    padding: 5px;
+}
+
+.tag-section-divider {
+    margin: 10px 0;
+}
+
 .project-outer-wrapper {
     padding: 0;
     height: 300px;
@@ -309,7 +317,17 @@ body, html, .page {
     z-index: -1;
 }
 
-.project-info {
+.project-tag {
+    padding: 4px 8px;
+    background-color: #797979;
+    border-radius: 3px;
+    color: white;
+    margin: 2px;
+    display: inline-block;
+}
+
+.project-tag:hover {
+    color: white;
 }
 
 /* ======================================== NAVS ========================================= */
@@ -328,7 +346,7 @@ body, html, .page {
 
 .nav-container-fixed {
     position: fixed;
-    background-color: #ffb1fd;
+    background-color: #d0d0d0;
 }
 
 /* ======================================== ANIMATIONS ================================ */

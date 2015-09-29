@@ -1,15 +1,13 @@
 <div class="nav-container-fixed">
-    <a href="#/projects/all">
-        <p>All</p>
-    </a>
-    <% _.each(types, function(name) { %>
-    <a href="#/projects/<%= name %>">
-        <p><%= name %></p>
-    </a>
-    <% }); %>
-    <% _.each(tech, function(name) { %>
-        <a href="#/projects/<%= name %>">
-            <p><%= name %></p>
-        </a>
-    <% }); %>
+    <div class="tag-wrapper">
+        <a href="#/projects/all" class="project-tag">All</a>
+        <hr class="tag-section-divider">
+        <% _.each(types, function(name) { %>
+        <a href="#/projects/<%= name %>" class="project-tag"><%= name %></a>
+        <% }); %>
+        <hr class="tag-section-divider">
+        <% _.each(tech, function(name) { %>
+        <a href="#/projects/<%= name %>" class="project-tag"><%= name %></a>
+        <% }); %>
+    </div>
 </div>
