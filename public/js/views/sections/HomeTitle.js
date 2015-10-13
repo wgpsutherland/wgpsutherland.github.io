@@ -30,7 +30,7 @@ define([
 
         homeLinks: [
             {
-                name: 'resume',
+                name: 'résumé',
                 link: './public/data/cv.pdf'
             },
             {
