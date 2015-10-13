@@ -304,12 +304,18 @@ body, html, .page {
     margin: 10px 0;
 }
 
-.project-outer-wrapper {
-    padding: 0;
-    height: 300px;
+.project-outer-wrapper, .project-inner-wrapper {
+    height: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.project-inner-wrapper {
+    padding: 5px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border: 2px solid black;
 }
 
 .project-tag {

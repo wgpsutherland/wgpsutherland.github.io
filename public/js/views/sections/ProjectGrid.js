@@ -32,14 +32,6 @@ define([
             });
 
             this.$el.html(template);
-
-            // set the background images of each of the projects
-            _.each(collection, function (project) {
-                var url = "url(" + project.get('main_image') + ")";
-                this.$('.project-wrapper-' + project.get('name')).css({
-                    'background-image': url
-                });
-            }, this);
         }
     });
 });

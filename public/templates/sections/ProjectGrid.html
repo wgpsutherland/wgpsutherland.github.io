@@ -1,8 +1,16 @@
-<% _.each(collection, function(project) { %>
-    <div class="col-md-6 project-outer-wrapper project-wrapper-<%= project.get('name') %>">
-        <p class="project-info">
-            <strong><%= project.get('name') %></strong>
-        </p>
-        <p><%= project.get('description') %></p>
+<% _.each(collection, function(project, i) { %>
+
+    <div class="col-md-6 project-outer-wrapper">
+        <div class="project-inner-wrapper  project-wrapper-<%= project.get('name') %>">
+            <p>
+                <strong><%= project.get('name') %></strong>
+            </p>
+            <p><%= project.get('description') %></p>
+
+            <% if(project.get('code')) { %>
+                <p><a href="<%= project.get('code') %>"><span class="fa fa-github-square"></span> Code</a></p>
+            <% } %>
+
+        </div>
     </div>
 <% }); %>

@@ -82,6 +82,35 @@
       "images": []
     },
     {
+      "name": "Slack_Connect_4_Bot",
+      "description": "A bot to play Connect 4 on Slack. Was featured on TheNextWeb.com and was trending on GitHub.",
+      "tags": [
+        "Personal",
+        "JavaScript",
+        "ECMAScript 6"
+      ],
+      "code": "https://github.com/wgpsutherland/slack-connect-4-bot",
+      "main_image": "public/images/projects/slack_connect_4/main.png",
+      "images": []
+    },
+    {
+      "name": "Gradients",
+      "description": "A web application for students to store their grades and track their progress.",
+      "tags": [
+        "Personal",
+        "Node.js",
+        "Backbone.js",
+        "PostgreSQL",
+        "JavaScript",
+        "CSS3",
+        "HTML5"
+      ],
+      "link": "gradients.herokuapp.com",
+      "code": "https://github.com/wgpsutherland/gradients",
+      "main_image": "public/images/projects/gradients/main.png",
+      "images": []
+    },
+    {
       "name": "Portfolio",
       "description": "My portfolio site.",
       "tags": [
@@ -110,23 +139,6 @@
       "link": "willsuther.land/blog",
       "code": "https://github.com/wgpsutherland/blog",
       "main_image": "public/images/projects/blog/main.png",
-      "images": []
-    },
-    {
-      "name": "Gradients",
-      "description": "A web application for students to store their grades and track their progress.",
-      "tags": [
-        "Personal",
-        "Node.js",
-        "Backbone.js",
-        "PostgreSQL",
-        "JavaScript",
-        "CSS3",
-        "HTML5"
-      ],
-      "link": "gradients.herokuapp.com",
-      "code": "https://github.com/wgpsutherland/gradients",
-      "main_image": "public/images/projects/gradients/main.png",
       "images": []
     },
     {
@@ -229,18 +241,6 @@
       ],
       "link": "https://www.npmjs.com/package/tinx",
       "code": "https://github.com/wgpsutherland/tinx",
-      "main_image": "",
-      "images": []
-    },
-    {
-      "name": "Slack Connect 4 Bot",
-      "description": "A bot that allows you to play Connect 4 on Slack! Start a game in any channel or private group, and 2 people can play. Written to practice new features found in the new ECMAScript 6 JavaScript standard.",
-      "tags": [
-        "Personal",
-        "JavaScript",
-        "ECMAScript 6"
-      ],
-      "code": "https://github.com/wgpsutherland/slack-connect-4-bot",
       "main_image": "",
       "images": []
     },
