@@ -22,7 +22,7 @@ body, html, .page {
     height: 100%;
     padding: 0;
     margin: 0;
-    font-family: 'open sans', sans-serif;
+    font-family: monospace, sans-serif;
     font-weight: 300;
 }
 
@@ -46,6 +46,12 @@ body, html, .page {
 .home-page {
     height: 100%;
     -webkit-backface-visibility: hidden; /* prevents transitions of child elements causing flickering in others */
+}
+
+/* =====================  PROJECTS PAGE ================== */
+
+.content-container {
+    padding-right: 10px;
 }
 
 /* =====================  ABOUT PAGE ===================== */
@@ -95,7 +101,6 @@ body, html, .page {
 /* ===================== TITLE VIEW ===================== */
 
 .title-view {
-    font-family: monospace;
     color: black;
 }
 
@@ -280,8 +285,7 @@ body, html, .page {
 
 .job-img {
     position: absolute;
-    margin: auto;
-    margin-top: 20px;
+    margin: 20px auto auto auto;
     left: 0;
     right: 0;
     max-height: 100px;
@@ -306,16 +310,14 @@ body, html, .page {
 
 .project-outer-wrapper, .project-inner-wrapper {
     height: 200px;
-    padding: 10px;
+    padding: 10px 0 0 10px;
     margin-bottom: 10px;
 }
 
 .project-inner-wrapper {
     padding: 5px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border: 2px solid black;
+    background-color: rgb(245, 245, 235);
+    box-shadow: 2px 2px 5px #888888;
 }
 
 .project-tag {
