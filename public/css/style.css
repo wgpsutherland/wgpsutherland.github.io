@@ -1,28 +1,10 @@
 /* ======================================== BODY ======================================== */
 
-html {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-
-}
-
-*, *:before, *:after {
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-    box-sizing: inherit;
-}
-
-body {
-    -webkit-transition: background-color 1s;
-    transition: background-color 1s;
-}
-
 body, html, .page {
     height: 100%;
     padding: 0;
     margin: 0;
-    font-family: monospace, sans-serif;
+    font-family: monospace;
     font-weight: 300;
 }
 
@@ -52,51 +34,11 @@ body, html, .page {
 
 .content-container {
     padding-right: 10px;
-}
-
-/* =====================  ABOUT PAGE ===================== */
-
-.content-container {
     width: 80%;
     float: left;
 }
 
-.about-page-view {
-    min-height: 150px;
-    padding: 20px 0;
-}
-
 /* ======================================== VIEWS ======================================= */
-
-.view-header {
-    font-size: 5em;
-    margin: 0;
-    margin-bottom: 25px;
-}
-
-.home-view {
-    padding: 20px 0;
-}
-
-/* ===================== BACKGROUND VIEW ================ */
-
-.background {
-    background-color: white;
-    position: fixed;
-    width: 100%;
-    min-height: 100%;
-    z-index: -10;
-
-    -webkit-transition: background-color 1s;
-    transition: background-color 1s;
-}
-
-.darken {
-    background-color: #4C4C4C;
-
-    -webkit-transition: background-color 1s;
-    transition: background-color 1s;
-}
 
 /* ===================== TITLE VIEW ===================== */
 
@@ -138,163 +80,6 @@ body, html, .page {
     -webkit-animation: blink 1s infinite;
     -moz-animation: blink 1s infinite;
     animation: blink 1s infinite;
-}
-
-/* ===================== ME VIEW ==================== */
-
-.me-view-contents-outer {
-    margin-top: 100px;
-    overflow-x: hidden;
-}
-
-.me-view-contact {
-    opacity: 0;
-    -ms-transform: translate(200px, 0px);
-    -webkit-transform: translate(200px, 0px);
-    transform: translate(200px, 0px);
-}
-
-.me-view-description {
-    opacity: 0;
-    -ms-transform: translate(-200px, 0px);
-    -webkit-transform: translate(-200px, 0px);
-    transform: translate(-200px, 0px);
-}
-
-.appear {
-    opacity: 1;
-    -webkit-transform: translate(0px, 0px);
-    -ms-transform: translate(0px, 0px);
-    transform: translate(0px, 0px);
-
-    -webkit-transition: opacity 1s, -webkit-transform 1s;
-    transition: opacity 1s, transform 1s;
-}
-
-.me hr {
-    border-color: #DDE0E0;
-}
-
-.me {
-    color: white;
-}
-
-.me p {
-    margin: 0 0 25px;
-    font-size: 1.3em;
-}
-
-.me-view-social-wrapper a {
-    font-size: 3em;
-    text-align: center;
-    color: #82BCEF;
-}
-
-.me-view-social-wrapper a:hover {
-    text-decoration: none;
-    color: #4f5c82;
-}
-
-.me-view-social-wrapper span {
-    display: block;
-    margin: 0 auto;
-}
-
-/* ===================== AWARDS VIEW ===================== */
-
-.awards {
-    background-color: #059CFF;
-    color: black;
-}
-
-.awards h1 {
-    color: white;
-}
-
-.award-outer-wrapper {
-    height: 200px;
-    padding: 5px;
-}
-
-.award-inner-wrapper {
-    height: 100%;
-    /*border: 3px solid black;*/
-}
-
-.award-inner-wrapper {
-    padding: 10px;
-    background-color: white;
-}
-
-.award-tile-text {
-    position: relative;
-    z-index: 1;
-    height: 100%;
-    color: black;
-}
-
-.award-inner-wrapper .award-tile-text {
-    opacity: 0;
-}
-
-.award-outer-wrapper:hover .award-tile-text {
-    opacity: 1;
-}
-
-.award-outer-wrapper:hover .award-img {
-    opacity: 0;
-}
-
-.award-img {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    max-height: 85%;
-    max-width: 85%;
-}
-
-/* ===================== EDUCATION VIEW ===================== */
-
-.education {
-    background-color: white;
-}
-
-/* ===================== EMPLOYMENT VIEW ===================== */
-
-.employment {
-    background-color: #FD53C4;
-}
-
-.employment h1 {
-    color: white;
-}
-
-.job-wrapper-outer {
-    background-color: white;
-    margin-bottom: 15px;
-}
-
-.job-img-wrapper {
-    height: 100%;
-    min-height: 120px;
-}
-
-.job-img {
-    position: absolute;
-    margin: 20px auto auto auto;
-    left: 0;
-    right: 0;
-    max-height: 100px;
-    max-width: 100px;
-}
-
-/* ===================== SKILLS VIEW ===================== */
-
-.skills {
-    background-color: rgba(255, 242, 209, 0.6);
 }
 
 /* ===================== PROJECTS VIEW =================== */
