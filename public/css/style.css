@@ -320,12 +320,20 @@ body, html, .page {
     box-shadow: 2px 2px 5px #888888;
 }
 
-.project-tag {
+.project-tag, .project-tag-main {
     padding: 4px 8px;
-    background-color: #797979;
     border-radius: 3px;
     margin: 2px;
     display: inline-block;
+}
+
+.project-tag {
+    background-color: #797979;
+}
+
+.project-tag-main {
+    background-color: white;
+    color: black;
 }
 
 .project-tag, .project-tag:hover, .project-tag:focus {

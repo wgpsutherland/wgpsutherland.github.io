@@ -32,6 +32,7 @@ define([
 
             this.router.on('route:projects', _.bind(function(id) {
                 this.projectGridView.render(id);
+                this.sidebar.render(id);
             }, this));
         },
 

@@ -1,13 +1,13 @@
 <div class="nav-container-fixed">
     <div class="tag-wrapper">
-        <a href="#/projects/all" class="project-tag">All</a>
+        <a href="#/projects/All" class="<%= 'All' === current ? 'project-tag-main' : 'project-tag' %>">All</a>
         <hr class="tag-section-divider">
         <% _.each(types, function(name) { %>
-        <a href="#/projects/<%= name %>" class="project-tag"><%= name %></a>
+        <a href="#/projects/<%= name %>" class="<%= name === current ? 'project-tag-main' : 'project-tag' %>"><%= name %></a>
         <% }); %>
         <hr class="tag-section-divider">
         <% _.each(tech, function(name) { %>
-        <a href="#/projects/<%= name %>" class="project-tag"><%= name %></a>
+        <a href="#/projects/<%= name %>" class="<%= name === current ? 'project-tag-main' : 'project-tag' %>"><%= name %></a>
         <% }); %>
     </div>
 </div>

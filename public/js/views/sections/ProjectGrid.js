@@ -24,7 +24,7 @@ define([
 
             var collection = this.collection.filter(_.bind(function (model) {
                 var tags = model.get('tags');
-                return this.filter === 'all' || _.contains(tags, this.filter);
+                return this.filter === 'All' || _.contains(tags, this.filter);
             }, this));
 
             var template = this.template({
