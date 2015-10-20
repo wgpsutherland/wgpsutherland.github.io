@@ -105,7 +105,7 @@
         "CSS3",
         "HTML5"
       ],
-      "link": "gradients.herokuapp.com",
+      "link": "https://gradients.herokuapp.com",
       "code": "https://github.com/wgpsutherland/gradients",
       "main_image": "public/images/projects/gradients/main.png",
       "images": []
@@ -120,7 +120,7 @@
         "CSS3",
         "HTML5"
       ],
-      "link": "willsuther.land",
+      "link": "http://willsuther.land",
       "code": "https://github.com/wgpsutherland/wgpsutherland.github.io",
       "main_image": "public/images/projects/willsuther.land/main.png",
       "images": []
@@ -136,7 +136,7 @@
         "CSS3",
         "HTML5"
       ],
-      "link": "willsuther.land/blog",
+      "link": "http://wgpsutherland.github.io/blog",
       "code": "https://github.com/wgpsutherland/blog",
       "main_image": "public/images/projects/blog/main.png",
       "images": []

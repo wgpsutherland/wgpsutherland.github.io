@@ -11,6 +11,10 @@
                 <p><a href="<%= project.get('code') %>">Code</a></p>
             <% } %>
 
+            <% if(project.get('link')) { %>
+            <p><a href="<%= project.get('link') %>">Link</a></p>
+            <% } %>
+
         </div>
     </div>
 <% }); %>
