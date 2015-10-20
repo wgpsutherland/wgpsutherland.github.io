@@ -65,7 +65,7 @@
   "projects": [
     {
       "name": "SideRank",
-      "description": "A web application for business employees to evaluate solutions to challenges proposed by their employer. Created for the company sideways6 as part of the module 'Software Hut'. Our application was chosen to be the winner by the client, as well as being chosen as the best application in the year.",
+      "description": "A web application for business employees to evaluate solutions to challenges proposed by their employer. We created it for the company sideways6 as part of a University module. Our application was chosen to be the winner by our individual client, as well as being chosen as the overall best application in the year.",
       "tags": [
         "University",
         "Client",
@@ -127,7 +127,7 @@
     },
     {
       "name": "blog",
-      "description": "My blog, written using Jekyll, the static site generator.",
+      "description": "My blog. Written using Jekyll, the static site generator.",
       "tags": [
         "Personal",
 
@@ -143,7 +143,7 @@
     },
     {
       "name": "Cisco_IoE_Challenge",
-      "description": "Proactively manage the passenger flow at Transport Service Facilities in Greater Manchester.",
+      "description": "Chosen to represent The University Of Sheffield at the event at Media City. We created a system to proactively manage passenger flow at Transport Service Facilities in Greater Manchester.",
       "tags": [
         "Hackathon",
         "Node.js",
@@ -174,7 +174,7 @@
     },
     {
       "name": "Update_Tracker",
-      "description": "A RESTful API that tracks updates for HP IDOL servers, along with a companion CMS.",
+      "description": "A RESTful API to tracks updates for HP IDOL servers, along with a companion CMS.",
       "tags": [
         "Internship",
         "Node.js",
@@ -203,7 +203,7 @@
     },
     {
       "name": "Server_Scaler",
-      "description": "A Node.js system to interact with RabbitMQ and calculate and set the optimal number of online servers to maximise profit and minimise queue wait times. With an accompanying visualiser.",
+      "description": "A Node.js system to interact with RabbitMQ and calculate the optimal number of online servers to maximise profit and minimise queue wait times. With an accompanying visualiser.",
       "tags": [
         "Internship",
         "JavaScript",
