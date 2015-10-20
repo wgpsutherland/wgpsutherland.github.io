@@ -4,16 +4,21 @@
         <div class="project-inner-wrapper  project-wrapper-<%= project.get('name') %>">
             <p>
                 <strong><%= project.get('name').replace(/_/g, ' ') %></strong>
+
+                <% if(project.get('code')) { %>
+                    - <a target="_blank" href="<%= project.get('code') %>">Code</a>
+                <% } %>
+                <% if(project.get('link')) { %>
+                    - <a target="_blank" href="<%= project.get('link') %>">Link</a>
+                <% } %>
             </p>
             <p><%= project.get('description') %></p>
 
-            <% if(project.get('code')) { %>
-                <p><a href="<%= project.get('code') %>">Code</a></p>
-            <% } %>
+            <!--<hr>-->
 
-            <% if(project.get('link')) { %>
-            <p><a href="<%= project.get('link') %>">Link</a></p>
-            <% } %>
+            <!--<% _.each(project.get('tags'), function(tag, i) { %>-->
+            <!--<span class="tag-span"><%= tag %>,</span>-->
+            <!--<% }); %>-->
 
         </div>
     </div>
