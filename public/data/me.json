@@ -83,7 +83,7 @@
     },
     {
       "name": "Slack_Connect_4_Bot",
-      "description": "A bot to play Connect 4 on Slack. It was <a href='http://thenextweb.com/shareables/2015/10/09/stop-what-youre-doing-and-play-connect-four-on-slack/'>featured on TheNextWeb.com</a> and was trending on GitHub.",
+      "description": "A bot to play Connect 4 on Slack. It was <a target='_blank' href='http://thenextweb.com/shareables/2015/10/09/stop-what-youre-doing-and-play-connect-four-on-slack/'>featured on TheNextWeb.com</a> and was trending on GitHub.",
       "tags": [
         "Personal",
         "JavaScript",
