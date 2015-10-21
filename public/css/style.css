@@ -38,6 +38,12 @@ body, html, .page {
     float: left;
 }
 
+@media (max-width: 767px) {
+    .content-container {
+        width: 100%;
+    }
+}
+
 /* ======================================== VIEWS ======================================= */
 
 /* ===================== TITLE VIEW ===================== */
@@ -135,6 +141,15 @@ body, html, .page {
 .nav-container, .nav-container-fixed {
     height: 100%;
     width: 20%;
+    z-index: 10;
+    overflow-y: scroll;
+    transition: width 0.4s;
+}
+
+@media (max-width: 767px) {
+    .nav-container, .nav-container-fixed {
+        width: 0;
+    }
 }
 
 .nav-container {
@@ -145,6 +160,40 @@ body, html, .page {
 .nav-container-fixed {
     position: fixed;
     background-color: #d0d0d0;
+}
+
+.burger-wrapper {
+    position: fixed;
+    display: none;
+    z-index: 100;
+    font-size: 2em;
+    padding: 5px;
+    right: 0;
+}
+
+.burger-icon {
+    padding: 10px;
+    background-color: #797979;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px #888888;
+}
+
+.burger-icon:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #797979;
+}
+
+@media (max-width: 767px) {
+    .burger-wrapper {
+        display: block;
+    }
+}
+
+.mobile-nav {
+    width: 100%;
+    transition: width 0.4s;
 }
 
 /* ======================================== ANIMATIONS ================================ */

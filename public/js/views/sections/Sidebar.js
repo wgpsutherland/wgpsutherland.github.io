@@ -28,6 +28,12 @@ define([
                 current: this.current
             });
             this.$el.html(template);
+        },
+        events: {
+            'click .burger-icon': 'menuAppear'
+        },
+        menuAppear: function() {
+            this.$('.nav-container-fixed').toggleClass('mobile-nav');
         }
     });
 });
