@@ -32,6 +32,21 @@ define([
             });
 
             this.$el.html(template);
+
+            if($(window).width() >= 768) this.normalizeRowHeights(); // when the projects are 2 to a row
+        },
+
+        normalizeRowHeights: function () {
+            _.defer(function() {
+                var rows = this.$('.project-row');
+                for (var i = 0; i < rows.length; i++) {
+                    var row = rows.eq(i);
+                    var projects = row.find('.project-outer-wrapper');
+                    for (var j = 0; j < projects.length; j++) {
+                        projects.eq(j).height(row.height() - 10 + 'px');
+                    }
+                }
+            });
         }
     });
 });

@@ -1,5 +1,9 @@
 <% _.each(collection, function(project, i) { %>
 
+<% if(i % 2 === 0) { %>
+    <div class="row project-row">
+<% } %>
+
     <div class="col-sm-6 project-outer-wrapper">
         <div class="project-inner-wrapper  project-wrapper-<%= project.get('name') %>">
             <p>
@@ -22,4 +26,8 @@
 
         </div>
     </div>
+
+<% if((i + 1) % 2 === 0) { %>
+    </div>
+<% } %>
 <% }); %>

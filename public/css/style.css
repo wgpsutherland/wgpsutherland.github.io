@@ -99,12 +99,11 @@ body, html, .page {
 }
 
 .project-outer-wrapper, .project-inner-wrapper {
-    height: 200px;
     padding: 10px 0 0 10px;
-    margin-bottom: 10px;
 }
 
 .project-inner-wrapper {
+    height: 100%;
     padding: 5px;
     background-color: rgb(245, 245, 235);
     box-shadow: 2px 2px 5px #888888;
