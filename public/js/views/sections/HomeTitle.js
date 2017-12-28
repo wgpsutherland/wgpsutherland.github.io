@@ -30,8 +30,8 @@ define([
 
         homeLinks: [
             {
-                name: 'résumé',
-                link: './public/data/cv.pdf'
+                name: 'github',
+                link: 'https://github.com/wgpsutherland'
             },
             {
                 name: 'projects',
